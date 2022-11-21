@@ -2,14 +2,7 @@
 import { useEffect, useState, useRef, useLayoutEffect, createRef, ReactNode } from 'react';
 import {Waypoint } from 'react-waypoint';
 import useWindowDimensions from './hooks/getWindowDimensions';
-// import TitleFrame from './frames/TitleFrame'
-// import FirsthFrame from './frames/FirsthFrame'
-// import  SecondFrame  from './frames/SecondFrame'
-// import  ThirdFrame  from './frames/ThirdFrame'
-// import  FourthFrame  from './frames/FourthFrame'
-// import  FifthFrame  from './frames/FifthFrame'
-// import  SixthFrame  from './frames/SixthFrame'
-// import SeventhFrame from './frames/SeventhFrame'
+
 import './index.css'
 
 import {FrameTitleSM} from './mobile'

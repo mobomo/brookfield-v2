@@ -114,6 +114,7 @@ module.exports = {
         '977': '30em',
         '9775': '27.5em',
         '9777': '25em',
+            '97777': '24em',
         '70': '35em',
 
       },
@@ -214,9 +215,9 @@ module.exports = {
         '26': '5.5rem',
       },
       fontFamily: {
-        'custom': ['ubuntu-mono', 'Ubuntu', 'sans-serif'],
-        'playfair': ['playfair-display', 'serif'],
+        // 'playfair': ['playfair-display-sc', 'serif'],
         'opensans': ['open-sans', 'sans-serif'],
+        'playfair':['playfair-display', 'serif'],
       },
       fontSize: {
         'xs': '.70rem',
@@ -243,6 +244,8 @@ module.exports = {
         'normal': 400,
         'medium': 500,
         'mediumplus': 530,
+               'mediumbold': 550,
+
         'semibold': 600,
         'bold': 700,
         'extrabold': 800,

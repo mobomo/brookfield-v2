@@ -13,13 +13,13 @@ const FifthFrame = () => {
   }, []);
   return (
     <div className='centerColumn w-full h-full  pb-20 pt-0 gap-0 bg-white animate-coverLayer'>
-      <div className='centerRow gap-2 max-w-130 '>
-        <div className='text-brandblue flex flex-col items-start gap-5 pr-0 max-w-97'>
-                <div className='heading font-bold min-w-9777'>Brookfield Asset Management</div>
+      <div className='centerRow gap-2 max-w-140 '>
+        <div className='text-brandblue flex flex-col items-start gap-5 pr-0 max-w-70 min-w-70'>
+                <div className='heading  min-w-9777 text-brandblue'>Brookfield Asset Management</div>
                 <div className='textContentLarger'>
                   An asset-lite manager investing third party capital through its private funds
                 </div>
-                <div className='textContentLarger indent-6 flex flex-col gap-2'> 
+                <div className='textContentLarger indent-6 flex flex-col gap-2 max-w-9777'> 
                   <li >Manages money for Limited Partners</li>
                   <li >Requires little or no [balance sheet] capital</li>
                   <li >Higher dividend payout ratio</li>

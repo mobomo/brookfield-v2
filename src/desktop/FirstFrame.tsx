@@ -15,9 +15,9 @@ const FirstFrame = () => {
                         <line x1="3.5" y1="61.9048" x2="3.5" y2="-7.62939e-06" stroke="#F5F5F5"/>
                         </svg>
       </div>
-      <div  className='text-center px-80 antialiased font-opensans  font-medium  text-lg gap-8 centerContent py-20   '>
+      <div  className='text-center px-80 antialiased font-opensans  font-medium  text-xl gap-8 centerContent py-20   '>
 
-                  <div className='-mt-20 max-w-100 min-w-97'>
+                  <div className='-mt-20 max-w-100 min-w-97 '>
 
                                       We have delivered superior long-term returns by following a patient, value-oriented
                               approach to investing, growing the breadth and depth of our portfolio over the years...

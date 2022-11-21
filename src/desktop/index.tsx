@@ -12,7 +12,7 @@ export default FrameTitle
 export const Frame0 = () => {
   return (
     <div className='
-      flex text-white text-4xl  w-70  
+      flex text-white text-5xl  w-70  
       text-center font-playfair font-mediumplus
       justify-center self-center'>
       Evolving to offer the best of both worlds</div>
@@ -24,7 +24,7 @@ export const Frame00 = () => {
   // mobil:mt-20 mobil:w-5/7
   return (
     <div className='
-      flex text-white text-xl text-center
+      flex text-white text-2xl text-center
       font-light   flex-wrap self-center max-w-985 leading-7 mt-2'>
       We are leveraging a century of private investment experience owning and
       operating assets and twenty years of offering private investment opportunities to LP,
