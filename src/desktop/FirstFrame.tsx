@@ -17,13 +17,13 @@ const FirstFrame = () => {
       </div>
       <div  className='text-center px-80 antialiased font-opensans  font-medium  text-xl gap-8 centerContent py-20   '>
 
-                  <div className='-mt-20 max-w-100 min-w-97 '>
+                  <div className='-mt-20 max-w-100 min-w-97 px-10'>
 
                                       We have delivered superior long-term returns by following a patient, value-oriented
                               approach to investing, growing the breadth and depth of our portfolio over the years...
 
                   </div>
-                  <div className='max-w-97 min-w-97'>
+                  <div className='max-w-9777 min-w-97'>
                                   All the while leveraging our operational expertise to improve outcomes
                                   for our business, investors and communities
                   </div>

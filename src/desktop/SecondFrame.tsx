@@ -6,7 +6,7 @@ const SecondFrame = () => {
   const [on, toggle] = React.useState(false)
   return (
     <div className='text-white  centerColumn  text-center w-fit h-fit  gap-10 mb-10'>
-      <div className='text-3xl font-semibold font-playfair leading-9 max-w-9775'>
+      <div className='text-3xl font-semibold font-playfair leading-9 max-w-9777'>
                       We believe our business has greater potential for even more growth with the creation of a new listed pure-pay alternative asset manager.
       </div>
       <div className='flex justify-center pr-64 '>
@@ -24,7 +24,7 @@ const SecondFrame = () => {
       <div className='flex  w-fit px-40 gap-20 '>
               <div className=' flex flex-col items-start pl-32 min-w-100 '>
                       <div className='flex text-white text-4.75xl  font-mediumplus font-playfair  0'>Two entities, distinct offerings</div>
-                      <div className='textContent max-w-70 text-left text-2xl'>
+                      <div className='textContent max-w-70 text-left text-2xl pr-10'>
                         Each with day-to-day operations preserved and the focus of a dedicated management team.
                       </div>
               </div>
