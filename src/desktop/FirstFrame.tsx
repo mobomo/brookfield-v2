@@ -1,11 +1,10 @@
-import { Animation1 } from '../Animations'
-import { Frame000 } from '../frames'
+import { Animation1 } from './Animations'
 
 
 const FirstFrame = () => {
   return (
     <div className='text-white centerColumn  gap-10'>
-      <div className='h-fit '>
+      <div className=' '>
 
         <Animation1 />
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { Animation9 } from '../Animations'
+import { Animation9 } from './Animations'
 
 
 
@@ -8,7 +8,7 @@ import { Animation9 } from '../Animations'
 
 function FifthFrame() {
   return (
-    <div className='p-10 gap-5 flex flex-col'>
+    <div className='p-10 gap-5 flex flex-col max-w-9777'>
       <div className='flex justify-center'>
                           <svg width="7" height="65" viewBox="0 0 7 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <ellipse cx="3.5" cy="2.70833" rx="3.5" ry="2.70833" fill="#F5F5F5"/>

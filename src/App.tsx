@@ -14,6 +14,7 @@ import './index.css'
 
 import {FrameTitleSM} from './mobile'
 import FirstFrameSM from './mobile/FirstFrame'
+import FirstFramebSM from './mobile/FirstFramebSM';
 import { Frame0SM, Frame00SM  } from './mobile'
 import  SecondFrameSM  from './mobile/SecondFrame'
 import  ThirdFrameSM  from './mobile/ThirdFrame'
@@ -40,7 +41,7 @@ function App() {
   const { width } = useWindowDimensions();
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
-    if (width < 700) {
+    if (width < 900) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
@@ -116,7 +117,8 @@ function App() {
                       bottomOffset='80%'
                       />
 
-        { viewScreen1? <FirstFrame />: <FirstFrameB /> }
+        {isMobile?viewScreen1 ? <FirstFrameSM /> : <FirstFramebSM />:viewScreen1 ? <FirstFrame /> : <FirstFrameB />}
+        
 
                             {/* <Waypoint
                       onEnter={() => unpinElement2()}

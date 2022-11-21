@@ -1,12 +1,29 @@
 import { Animation1 } from './Animations'
 import { Frame000 } from './'
-import { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
+import { FrameTitleSM, Frame0SM, Frame00SM } from '../mobile'
+import useWindowDimensions from '../hooks/getWindowDimensions';
+import useMediaQueries from '../hooks/getMediaQueries';
 
 export const FirsthFrame = () => {
-  const [on, toggle] = useState(false);
+  const { screenSize } = useMediaQueries();
+  const { width } = useWindowDimensions();
+  const [isMobile, setIsMobile] = React.useState(false);
+  React.useEffect(() => {
+    if (width < 700) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  }, [width]);
   return (
 
-     <div className='flex flex-col text-center   items-center max-w-40'>
+    <div className='flex flex-col text-center   items-center max-w-80  '>
+            <div className='w-full text-center flex flex-col justify-center max-w-70'>
+     <FrameTitleSM /> 
+   <Frame0SM />
+     <Frame00SM />
+         </div>
                   <div className='animate-layerOpacity'>
                     <Animation1 />
                   </div>
@@ -20,12 +37,12 @@ export const FirsthFrame = () => {
                   </div>
                   <div className='
                   flex flex-col text-center justify-center items-center mt-3 text-white text-xs  font-normal gap-4 antialiased tracking-tighter'>
-                  <div className=' p-4'>
+                  <div className=' p-4 max-w-70'>
                     We have delivered superior long-term returns by following a patient, value-oriented
                     approach to investing, growing the breadth and depth of our portfolio over the years...
                   </div>
                   <div>
-                      <div className='px-4'>
+                      <div className='px-4  max-w-70'>
                         All the while leveraging our operational expertise to improve outcomes
                         for our business, investors and communities
                       </div>

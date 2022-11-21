@@ -10,7 +10,7 @@ const ThirdFrame = () => {
         <div className='-mt-20'>
           <Animation4 />
         </div>
-        <div className='text-white pl-10'>
+        <div className='text-white pl-10 min-w-977'>
           <div className='text-4.75xl  font-mediumplus font-playfair'>
                 Another way to invest with Brookfield
           </div>

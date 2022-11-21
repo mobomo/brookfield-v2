@@ -1,10 +1,10 @@
-import { Animation2 } from '../Animations'
+import { Animation2 } from './Animations'
 
 
 
 function FourthFrame() {
   return (
-    <div className='mobileContent pb-0 '>
+    <div className='centerColumn pb-0 max-w-9777'>
       <div>
          <Animation2 />
       </div>

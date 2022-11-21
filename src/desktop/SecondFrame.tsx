@@ -17,7 +17,7 @@ const SecondFrame = () => {
                           </svg>
       </div>
       <div className='flex  w-fit px-40 gap-20 '>
-              <div className=' flex flex-col items-start pl-32'>
+              <div className=' flex flex-col items-start pl-32 min-w-100 '>
                       <div className='flex text-white text-4.75xl  font-mediumplus font-playfair  0'>Two entities, distinct offerings</div>
                       <div className='textContent max-w-70 text-left'>
                         Each with day-to-day operations preserved and the focus of a dedicated management team.

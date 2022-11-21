@@ -1,10 +1,10 @@
-import {  Animation4 } from '../Animations'
+import {  Animation4 } from './Animations'
 
-function FifthFrame() {
+function ThirdFrame() {
   return (
-    <div className='p-6'>
+    <div className='p-6 max-w-9777'>
       <div> <Animation4 /></div>
-      <div className='text-white text-center px-10 gap-3 flex flex-col'>
+      <div className='text-white text-center px-10 gap-3 flex flex-col max-w-9777'>
 
               <div className='font-playfair font-mediumplus  text-2xl'>Another way to invest with Brookfield</div>
               <div className='font-playfair font-normal  text-xs  antialiased tracking-tighter'>
@@ -21,4 +21,4 @@ function FifthFrame() {
   )
 }
 
-export default FifthFrame
+export default ThirdFrame

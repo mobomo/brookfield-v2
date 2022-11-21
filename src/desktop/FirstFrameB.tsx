@@ -1,4 +1,4 @@
-import { Animation1 } from '../Animations'
+import { Animation1 } from './Animations'
 import { FrameTitle, Frame0, Frame00 } from '../desktop'
 import { FrameTitleSM, Frame0SM, Frame00SM } from '../mobile'
 import useMediaQueries from '../hooks/getMediaQueries'
@@ -19,7 +19,7 @@ const FirstFrame = () => {
   
   console.log('isMobile: ', isMobile);
   return (
-    <div className='text-white centerColumn  gap-10'>
+    <div className='text-white centerColumn  gap-10 w-fit'>
       <div className='w-full text-center flex flex-col justify-center '>
       { isMobile? <FrameTitleSM /> :<FrameTitle />}
      { isMobile?<Frame0SM />: <Frame0 />}
