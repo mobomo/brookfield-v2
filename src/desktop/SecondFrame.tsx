@@ -3,6 +3,7 @@ import { Animation3 } from '../desktop/Animations'
 
 
 const SecondFrame = () => {
+  const [on, toggle] = React.useState(false)
   return (
     <div className='text-white  centerColumn  text-center w-fit h-fit  gap-10 mb-10'>
       <div className='text-3xl font-semibold font-opensans leading-9 max-w-9775'>
@@ -23,7 +24,7 @@ const SecondFrame = () => {
                         Each with day-to-day operations preserved and the focus of a dedicated management team.
                       </div>
               </div>
-              <div className='  -mt-52    items-end'>
+              <div className='  -mt-52    items-end animate-layerOpacity'>
                  <Animation3 />
               </div>
 

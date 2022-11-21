@@ -93,10 +93,10 @@ function App() {
        {  isMobile?  <FrameTitleSM />: <FrameTitle />}
         </div>
 
-                    <Waypoint
+                    {/* <Waypoint
                       onEnter={() => pinElement()}
                       bottomOffset='95%'
-                      />
+                      /> */}
 
                       <div id='intro' className='flex flex-col    gap-3 items-center'>
                            { isMobile?<Frame0SM />:  <Frame0 />}
@@ -112,10 +112,10 @@ function App() {
      
       <div className="screen h-fit"  id='screen2'>
       
-                    <Waypoint
+                    {/* <Waypoint
                       onEnter={() => setViewScreen1(false)}
                       bottomOffset='80%'
-                      />
+                      /> */}
 
         {isMobile?viewScreen1 ? <FirstFrameSM /> : <FirstFramebSM />:viewScreen1 ? <FirstFrame /> : <FirstFrameB />}
         

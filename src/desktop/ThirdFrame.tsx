@@ -7,7 +7,7 @@ const ThirdFrame = () => {
   return (
     <div className='centerContent w-fit h-fit max-w-140 pb-14'>
       <div className='flex'>
-        <div className='-mt-20'>
+        <div className='-mt-20 animate-layerOpacity'>
           <Animation4 />
         </div>
         <div className='text-white pl-10 min-w-977'>

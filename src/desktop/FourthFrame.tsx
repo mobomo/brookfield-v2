@@ -1,5 +1,5 @@
 import React from 'react'
-import { Animation2, Animation2a } from '../desktop/Animations';
+import { Animation2, Animation2a } from './Animations';
 
 const FourthFrame = () => {
     const [on, toggle] = React.useState(true);
@@ -10,7 +10,7 @@ const FourthFrame = () => {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className='centerRow w-fit h-fit max-w-100 pb-28 pt-16'>
+    <div className='centerRow w-fit h-fit max-w-130 pb-28 pt-16'>
       <div className='text-brandblue flex flex-col max-w-97   
       justify-center text-left gap-3 pb-16'>
               <div className='flex  text-4.75xl  font-bold font-playfair'>Brookfield Corporation</div>

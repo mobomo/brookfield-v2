@@ -29,7 +29,7 @@ const FifthFrame = () => {
            {on? <Animation5/> :<Animation5a />}
         </div>
       </div>
-      <div className='max-w-100 '>
+      <div className=' '>
      { on? <Animation6/>: <Animation6a />}
       </div>
     </div>
