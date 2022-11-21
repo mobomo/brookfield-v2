@@ -1,13 +1,19 @@
 import React from 'react'
 import { Animation4 } from '../desktop/Animations';
-
+import {Waypoint} from 'react-waypoint'
 
 
 const ThirdFrame = () => {
+  const [on, toggle] = React.useState(false)
+
   return (
     <div className='centerContent w-fit h-fit max-w-140 pb-14'>
+                                          <Waypoint
+                      onLeave={() => toggle(!on)}
+                      bottomOffset='-90%'
+                      />
       <div className='flex'>
-        <div className='-mt-20 animate-layerOpacity'>
+        <div className={`-mt-20 ${on?'animate-layerOpacity':''}`}>
           <Animation4 />
         </div>
         <div className='text-white pl-10 min-w-977'>

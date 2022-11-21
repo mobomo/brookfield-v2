@@ -1,6 +1,6 @@
 import React from 'react'
 import { Animation3 } from '../desktop/Animations'
-
+import {Waypoint} from 'react-waypoint'
 
 const SecondFrame = () => {
   const [on, toggle] = React.useState(false)
@@ -17,6 +17,10 @@ const SecondFrame = () => {
                           <line x1="1" y1="83.5" x2="265" y2="83.5" stroke="#F5F5F5"/>
                           </svg>
       </div>
+                                    <Waypoint
+                      onLeave={() => toggle(!on)}
+                      // bottomOffset='-60%'
+                      />
       <div className='flex  w-fit px-40 gap-20 '>
               <div className=' flex flex-col items-start pl-32 min-w-100 '>
                       <div className='flex text-white text-4.75xl  font-mediumplus font-playfair  0'>Two entities, distinct offerings</div>
@@ -24,7 +28,7 @@ const SecondFrame = () => {
                         Each with day-to-day operations preserved and the focus of a dedicated management team.
                       </div>
               </div>
-              <div className='  -mt-52    items-end animate-layerOpacity'>
+              <div className={`  -mt-52    items-end ${on?'animate-layerOpacity':''}`}>
                  <Animation3 />
               </div>
 
