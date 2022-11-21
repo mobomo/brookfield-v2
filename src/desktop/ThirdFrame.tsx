@@ -16,8 +16,8 @@ const ThirdFrame = () => {
         <div className={`-mt-24 ${on?'animate-layerOpacity':''}`}>
           <Animation4 />
         </div>
-        <div className='text-white pl-10 min-w-100 '>
-          <div className='text-4.75xl  font-mediumplus font-playfair'>
+        <div className='text-white pl-10 min-w-100  '>
+          <div className='text-4.75xl  font-mediumplus font-playfair pr-16 '>
                 Another way to invest with Brookfield
           </div>
           <div className='textContent'>
@@ -25,7 +25,7 @@ const ThirdFrame = () => {
           </div>
         </div>
       </div>
-      <div className='-mt-48 -mr-64'>
+      <div className='-mt-28 -mr-64'>
          <svg width="333" height="168" viewBox="0 0 333 168" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="3.5" cy="164.5" r="3.5" transform="rotate(-180 3.5 164.5)" fill="#F5F5F5"/>
 <line x1="3.5" y1="164" x2="3.5" y2="84" stroke="#F5F5F5"/>

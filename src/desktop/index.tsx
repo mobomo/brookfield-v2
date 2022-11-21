@@ -25,7 +25,7 @@ export const Frame00 = () => {
   return (
     <div className='
       flex text-white text-2xl text-center
-      font-light   flex-wrap self-center max-w-985 leading-7 mt-2'>
+      font-light   flex-wrap self-center max-w-985 leading-8 mt-2'>
       We are leveraging a century of private investment experience owning and
       operating assets and twenty years of offering private investment opportunities to LP,
       creating a new opportunity for investors to benefit from our investment expertise
