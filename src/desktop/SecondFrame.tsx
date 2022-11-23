@@ -4,7 +4,6 @@ import {Waypoint} from 'react-waypoint'
 
 const SecondFrame = () => {
   const [on, toggle] = React.useState(false)
-  console.log('on second: ', on);
   
   return (
     <div className='text-white  centerColumn  text-center w-fit h-fit  gap-10 '>

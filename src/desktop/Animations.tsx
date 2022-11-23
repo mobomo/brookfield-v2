@@ -1,7 +1,9 @@
 
 import Lottie from 'react-lottie';
 import animations from '../jfiles'
-
+import useTimer from '../hooks/getTimeUp';
+import { Waypoint } from 'react-waypoint';
+import React from 'react';
 
 export const Animation1 = () => {
     const defaultOptions = {
@@ -18,21 +20,28 @@ export const Animation1 = () => {
 
 export const Animation2 = () => {
     const defaultOptions = {
-      loop: false,
+      loop: true,
       autoplay: true, 
-      animationData: animations.anim4 ,
+      animationData: animations.anim4,
+      
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice",
+        // className: { backgroundColor: 'black' }.
+      }
     }
-  return <Lottie
+  return (<>
+
+    <Lottie
     options={defaultOptions}
     height={500}
     width={500}
-    
   />;
-};
+  </>);
+}
 
 export const Animation2a = () => {
     const defaultOptions = {
-      loop: true,
+      loop: false,
       autoplay: true, 
       animationData: animations.anim4 ,
     }
@@ -81,7 +90,7 @@ export const Animation4 = () => {
 };
 export const Animation5 = () => {
     const defaultOptions = {
-      loop: false,
+      loop: true,
       autoplay: true, 
       animationData: animations.anim5,
       
@@ -90,15 +99,17 @@ export const Animation5 = () => {
         // className: { backgroundColor: 'black' }.
       }
     }
-      return <Lottie
+  return (<>
+    <Lottie
     options={defaultOptions}
     height={500}
     width={500}
   />;
+  </>);
 }
 export const Animation5a = () => {
     const defaultOptions = {
-      loop: true,
+      loop: false,
       autoplay: true, 
       animationData: animations.anim5 ,
     }
@@ -111,7 +122,7 @@ export const Animation5a = () => {
 
 export const Animation6 = () => {
     const defaultOptions = {
-      loop: false,
+      loop: true,
       autoplay: true, 
       animationData: animations.iconRow,
     }
@@ -124,7 +135,7 @@ export const Animation6 = () => {
 
 export const Animation6a = () => {
     const defaultOptions = {
-      loop: true,
+      loop: false,
       autoplay: true, 
       animationData: animations.iconRow,
     }
@@ -137,7 +148,7 @@ export const Animation6a = () => {
 };
 export const Animation7 = () => {
     const defaultOptions = {
-      loop: false,
+      loop: true,
       autoplay: true, 
       animationData: animations.iconRowv2 ,
     }
@@ -145,7 +156,7 @@ export const Animation7 = () => {
 };
 export const Animation7a = () => {
     const defaultOptions = {
-      loop: true,
+      loop: false,
       autoplay: true, 
       animationData: animations.iconRowv2 ,
     }

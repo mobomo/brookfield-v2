@@ -74,7 +74,7 @@ function App() {
   useEffect(() => {
   return scrollY.onChange((latest) => {
     setScroll(scrollYProgress.get())
-    console.log("Page scroll: ", latest, scrollYProgress.get())
+    // console.log("Page scroll: ", latest, scrollYProgress.get())
   })
   }, [])
 

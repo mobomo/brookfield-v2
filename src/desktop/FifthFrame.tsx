@@ -1,26 +1,17 @@
-import React, {ReactNode} from 'react'
-import { Animation6,Animation6a, Animation5,Animation5a } from '../desktop/Animations'
-import {Waypoint } from 'react-waypoint';
+
+import { Animation6, Animation6a,Animation5, Animation5a } from '../desktop/Animations'
+import React from 'react'
+import {Waypoint} from 'react-waypoint'
 
 const FifthFrame = () => {
-    
-    const [on, toggle] = React.useState(true);
-        console.log('on fifth-: ', on);
-
+  const [on, toggle] = React.useState(true);
 
   return (
-    <div className={`centerColumn w-full h-full   pb-20 pt-0 gap-0 bg-white`} id='whiteLayer' key='1'>
+    <div className={`centerColumn w-full h-full   pb-20 pt-0 gap-0 bg-white`} >
+      <Waypoint
+        onEnter={() => toggle(false)}
+      />
       <div className='centerRow gap-2 max-w-140 '>
-                     <Waypoint
-          onEnter={() => {
-            console.log('on enter')
-            toggle(!on)
-          }}
-          onLeave={() => {
-            toggle(!on)
-          }}
-                      bottomOffset='-10%'
-                      />
         <div className='text-brandblue flex flex-col items-start gap-5 pr-0 max-w-70 min-w-70'>
                 <div className='heading  min-w-9777 text-brandblue'>Brookfield Asset Management</div>
                 <div className='textContentLarger'>
@@ -33,12 +24,13 @@ const FifthFrame = () => {
                 </div>
         </div>
         <div className=''>
-           {on? <Animation5a/> :<Animation5 />}
+       {  on? <Animation5  />:<Animation5a  />}
         </div>
       </div>
       <div className=' '>
-     { on? <Animation6a/>: <Animation6 />}
+   { on? <Animation6 />: <Animation6a />}
       </div>
+
     </div>
   )
 }
