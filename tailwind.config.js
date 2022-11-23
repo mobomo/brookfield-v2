@@ -13,7 +13,7 @@ module.exports = {
         },
         "100%": {
           opacity: "1",
-          transform: "translateY(0) scale(1)",
+          transform: "translateY(-90%) scale(1)",
         },
       },
       layerOpacity: {
@@ -29,7 +29,7 @@ module.exports = {
           transform: "translateY(0)",
         },
         to: {
-          transform: "translateY(-25px)",
+          transform: "translateY(25px)",
         },
       }
 
@@ -39,7 +39,7 @@ module.exports = {
       "fade-in-down": "fade-in-down 0.5s ease-out",
       expand: "expand 1.5s ease-out",
       // move: "move 2s ease-out",
-      coverLayer: "coverLayer 0.75s ease-out",
+      coverLayer: "coverLayer 2s ease-out",
       layerOpacity: "layerOpacity 2s ease-out",
       moveLayer1: "moveLayer 2s  linear 0.5s 1 normal forwards",
       moveLayer2: "moveLayer 1s  linear 0.5s 1 normal forwards",
@@ -82,6 +82,43 @@ module.exports = {
 
       },
       width: {
+        "1/7": "14.2857143%",
+        "2/7": "28%",
+        "3/7": "42.8571429%",
+        "4/7": "57.1428571%",
+        "5/7": "71.4285714%",
+        "6/7": "85.7142857%",
+        "7/8": "87.5%",
+        "8/9": "88.8888889%",
+        "9/10": "90%",
+        "10/11": "90.9090909%",
+        "11/12": "91.6666667%",
+        "12/13": "92.3076923%",
+        "13/14": "92.8571429%",
+        "14/15": "93.3333333%",
+        "15/16": "93.75%",
+        "16/17": "94.1176471%",
+        "17/18": "94.4444444%",
+        "18/19": "94.7368421%",
+        "19/20": "95%",
+        '150': '75em',
+        '140': '70em',
+        '130': '65em',
+        '120': '60em',
+        '110': '55em',
+        '100': '50em',
+        '99': '45em',
+        '98': '40em',
+        '97': '35em',
+        '975': '32.5em',
+        '977': '30em',
+        '9775': '27.5em',
+        '9777': '25em',
+            '97777': '24em',
+        '70': '35em',
+
+      },
+            height: {
         "1/7": "14.2857143%",
         "2/7": "28%",
         "3/7": "42.8571429%",
@@ -215,9 +252,9 @@ module.exports = {
         '26': '5.5rem',
       },
       fontFamily: {
-        // 'playfair': ['playfair-display-sc', 'serif'],
-        'opensans': ['open-sans', 'sans-serif'],
-        'playfair':['playfair-display', 'serif'],
+        'playfairsc': ['playfair-display-sc', 'serif'],
+        'opensans': ['Open Sans', 'sans-serif'],
+        'playfair':['Playfair Display', 'serif'],
       },
       fontSize: {
         'xs': '.70rem',
@@ -244,7 +281,7 @@ module.exports = {
         'normal': 400,
         'medium': 500,
         'mediumplus': 530,
-               'mediumbold': 550,
+               'mediumbold': 500,
 
         'semibold': 600,
         'bold': 700,

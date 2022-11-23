@@ -3,7 +3,7 @@ import {  Animation3 } from './Animations'
 
 function SecondFrame() {
   return (
-    <div className='centerColumn text-white  w-fit  max-w-9777'>
+    <div className='centerColumn text-white  w-fit  max-w-9777 mb-40 absolute'>
       <div className=' flex flex-col items-center '>
                 <div className=' text-lg w-full text-center p-7 tracking-tighter  max-w-9777'> 
                           We believe our business has greater potential for even more growth with the creation of a new listed pure-pay alternative asset manager.

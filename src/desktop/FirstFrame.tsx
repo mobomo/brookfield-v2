@@ -1,9 +1,49 @@
 import { Animation1 } from './Animations'
+import { useEffect, useRef, useState } from 'react'
+import { useScroll, motion, useTransform } from 'framer-motion'
 
 
 const FirstFrame = () => {
+    const {scrollY} = useScroll()
+  const [scroll, setScroll] = useState(0);
+
+      const ref = useRef(null)
+  const { scrollYProgress } = useScroll({
+  target: ref,
+  offset: ["start end", "end end"]
+  })
+
+      useEffect(() => {
+  return scrollY.onChange((latest) => {
+    setScroll(scrollYProgress.get())
+    // console.log("Page scroll 2: ", latest, scrollYProgress.get())
+  })
+      }, [])
+  
+  
+  
   return (
-    <div className='text-white centerColumn  gap-10'>
+    <motion.div
+            initial={{
+              //  scaleX: '100%',
+              // scaleY: 1,
+        opacity: 0.8,
+              
+              y:'75%',
+            }}
+                  style={{
+                    // scaleX: scrollYProgress,
+                    // scaleY: scrollYProgress,
+                            opacity: scrollYProgress,
+                            translateY:-100*scroll*7.5
+                  }}
+            ref={ref}
+            // animate={{translateY: scroll2}}
+            // className='z-50 absolute'
+      exit={{ opacity: 0 }}
+          
+      className='text-white centerColumn  gap-10 z-40 absolute '
+    >
       <div className=' '>
 
         <Animation1 />
@@ -31,7 +71,7 @@ const FirstFrame = () => {
 
 
 
-    </div>
+    </motion.div>
   )
 }
 

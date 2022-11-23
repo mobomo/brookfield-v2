@@ -2,7 +2,7 @@ import {  Animation4 } from './Animations'
 
 function ThirdFrame() {
   return (
-    <div className='p-6 max-w-9777'>
+    <div className='p-6 max-w-9777 mb-40 absolute'>
       <div> <Animation4 /></div>
       <div className='text-white text-center px-10 gap-3 flex flex-col max-w-9777'>
 

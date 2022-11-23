@@ -4,8 +4,10 @@ import {Waypoint} from 'react-waypoint'
 
 const SecondFrame = () => {
   const [on, toggle] = React.useState(false)
+  console.log('on second: ', on);
+  
   return (
-    <div className='text-white  centerColumn  text-center w-fit h-fit  gap-10 mb-10'>
+    <div className='text-white  centerColumn  text-center w-fit h-fit  gap-10 '>
       <div className='text-3xl font-semibold font-playfair leading-9 max-w-9777'>
                       We believe our business has greater potential for even more growth with the creation of a new listed pure-pay alternative asset manager.
       </div>
@@ -17,10 +19,10 @@ const SecondFrame = () => {
                           <line x1="1" y1="83.5" x2="265" y2="83.5" stroke="#F5F5F5"/>
                           </svg>
       </div>
-                                    <Waypoint
+                                    {/* <Waypoint
                       onLeave={() => toggle(!on)}
-                      // bottomOffset='-60%'
-                      />
+                      bottomOffset='300px'
+                      /> */}
       <div className='flex  w-fit px-40 gap-20 '>
               <div className=' flex flex-col items-start pl-32 min-w-100 '>
                       <div className='flex text-white text-4.75xl  font-mediumplus font-playfair  0'>Two entities, distinct offerings</div>

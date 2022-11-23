@@ -6,7 +6,7 @@ export const FirsthFrame = () => {
   const [on, toggle] = useState(false);
   return (
 
-     <div className='flex flex-col text-center   items-center max-w-40'>
+     <div className='flex flex-col text-center   items-center max-w-40 -mt-80 z-50 absolute'>
                   <div className='animate-layerOpacity'>
                     <Animation1 />
                   </div>

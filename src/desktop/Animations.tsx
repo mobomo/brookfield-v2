@@ -81,7 +81,7 @@ export const Animation4 = () => {
 };
 export const Animation5 = () => {
     const defaultOptions = {
-      loop: true,
+      loop: false,
       autoplay: true, 
       animationData: animations.anim5,
       
@@ -98,7 +98,7 @@ export const Animation5 = () => {
 }
 export const Animation5a = () => {
     const defaultOptions = {
-      loop: false,
+      loop: true,
       autoplay: true, 
       animationData: animations.anim5 ,
     }
@@ -111,7 +111,7 @@ export const Animation5a = () => {
 
 export const Animation6 = () => {
     const defaultOptions = {
-      loop: true,
+      loop: false,
       autoplay: true, 
       animationData: animations.iconRow,
     }
@@ -124,7 +124,7 @@ export const Animation6 = () => {
 
 export const Animation6a = () => {
     const defaultOptions = {
-      loop: false,
+      loop: true,
       autoplay: true, 
       animationData: animations.iconRow,
     }

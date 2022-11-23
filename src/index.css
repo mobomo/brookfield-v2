@@ -1,6 +1,7 @@
 /* @import url('https: //use.typekit.net/kox1ddx.css?family=playfair-display'); */
 
 @import url('https://fonts.cdnfonts.com/css/playfair-display-sc');
+/* @import url('https://fonts.cdnfonts.com/s/16075/PlayfairDisplaySC-Regular.woff2'); */
 
 @tailwind base;
 @tailwind components;
@@ -44,7 +45,7 @@
     @apply w-40 h-80 bg-green-500 p-2 flex-shrink-0
   }
   .heading {
-    @apply text-5xl font-normal  font-playfair antialiased tracking-tight font-mediumbold;
+    @apply text-5xl  font-playfair antialiased tracking-tight font-semibold;
   }
   .textContent {
     @apply text-2xl font-normal font-opensans antialiased tracking-tighter;
