@@ -252,8 +252,8 @@ module.exports = {
         '26': '5.5rem',
       },
       fontFamily: {
-        'playfairsc': ['playfair-display-sc', 'serif'],
         'opensans': ['Open Sans', 'sans-serif'],
+        //  'opensansregular': ['Open Sans Regular', 'sans-serif'],
         'playfair':['Playfair Display', 'serif'],
       },
       fontSize: {

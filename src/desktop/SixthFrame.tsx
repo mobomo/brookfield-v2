@@ -11,7 +11,7 @@ const SixthFrame = () => {
                               <line x1="3.5" y1="4" x2="3.5" y2="84" stroke="#F5F5F5"/>
                               </svg>
               </div>
-              <div className='text-center px-2  max-w-97'>
+              <div className='text-center px-2  max-w-97 flex flex-col gap-3'>
                       <div className='heading '>A proven strategy</div>
                       <div className='textContent leading-8'>
                                   Leveraging a history of successfully providing public market access to Brookfield's investing expertise

@@ -16,11 +16,11 @@ const ThirdFrame = () => {
         <div className={`-mt-24 ${on?'animate-layerOpacity':''}`}>
           <Animation4 />
         </div>
-        <div className='text-white pl-10 min-w-100  '>
+        <div className='text-white pl-10 min-w-100  flex flex-col gap-3'>
           <div className='text-4.75xl  font-mediumplus font-playfair pr-16 '>
                 Another way to invest with Brookfield
           </div>
-          <div className='textContent'>
+          <div className='textContent max-w-977 '>
                  Investors looking for a pure-play asset manager to invest in--one with the backing of a company with over [50] years of investing experience and a strong track record of delivering returns to shareholders           
           </div>
         </div>
