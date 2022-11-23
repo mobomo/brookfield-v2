@@ -65,7 +65,7 @@ function App() {
   const { scrollYProgress } = useScroll({
   target: ref,
     // offset: ["start end", "end end"],
-   offset: ["0.9 1", "1 1"],
+   offset: ["0.5 1", "1 1"],
 
   })
 
