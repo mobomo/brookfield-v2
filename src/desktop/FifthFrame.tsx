@@ -5,11 +5,15 @@ import {Waypoint} from 'react-waypoint'
 
 const FifthFrame = () => {
   const [on, toggle] = React.useState(true);
+  React.useEffect(() => {
+    console.log('on: ', on);
+  }, [on])
 
   return (
     <div className={`centerColumn w-full h-full   pb-20 pt-0 gap-0 bg-white`} >
       <Waypoint
         onEnter={() => toggle(false)}
+        bottomOffset='85%'
       />
       <div className='centerRow gap-2 max-w-140 '>
         <div className='text-brandblue flex flex-col items-start gap-5 pr-0 max-w-70 min-w-70'>
