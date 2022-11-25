@@ -13,7 +13,7 @@ export const Frame0SM = () => {
     <div className='
       flex text-white  text-2xl   
       text-center font-playfair font-mediumplus 
-      justify-center max-w-68  px-14 py-6 max-w-70 -mt-20'>
+      justify-center max-w-68  px-14 py-6  -mt-20'>
       Evolving to offer the best of both worlds</div>
   )
 };
@@ -24,7 +24,7 @@ export const Frame00SM = () => {
   return (
     <div className='
       flex text-white text-xs text-center
-      font-mediumplus  flex-wrap antialiased tracking-tighter  px-10 '>
+      font-mediumplus  flex-wrap antialiased tracking-tighter  px-10 max-w-70'>
       We are leveraging a century of private investment experience owning and
       operating assets and twenty years of offering private investment opportunities to LP,
       creating a new opportunity for investors to benefit from our investment expertise

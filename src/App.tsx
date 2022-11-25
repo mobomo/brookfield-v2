@@ -60,6 +60,25 @@ function App() {
     }
   }, [width]);
 
+    // useEffect(() => {
+    // if (width < 1000) {
+    //   setIsLaptop(true)
+    //   setIsIpad(false)
+    //   setIsMobile(false)
+    // } else if (width < 820) {
+    //   setIsIpad(true)
+    //   setIsLaptop(false)
+    //   setIsMobile(false)
+    // } else if (width < 600) {      
+    //   setIsMobile(true)
+    //   setIsIpad(false)
+    //   setIsLaptop(false)
+    // } else {
+    //   setIsMobile(false)
+    //   setIsLaptop(false)
+    //   setIsIpad(false)
+    // }
+
 
 
   const ref = useRef(null)
@@ -108,7 +127,7 @@ const {scrollY} = useScroll()
       const ref = useRef(null)
   const { scrollYProgress } = useScroll({
   target: ref,
-  offset: ["start end", "end end"]
+  offset: ["0 1", "1 1"]
   })
 
   useEffect(() => {
@@ -162,19 +181,19 @@ const translateY = useTransform(y, input2, output2)
 
        </div> 
      
-      <div className="screen h-9777"  id='screen2'>
+      <div className="screen h-70"  id='screen2'>
   
         {isMobile ? <FirstFrameSM /> : <FirstFrame />}
  
          
       </div>
-      <div className=" screen  h-99 z-50 "  id='screen3'>
+      <div className=" screen h-100 lg:h-100 xl:h-99  z-50 "  id='screen3'>
         
   
         {isMobile ? <SecondFrameSM /> : <OnScrollAnimation initial={ 0} duration={2}><SecondFrame /></OnScrollAnimation>}
       
       </div>
-      <div className="screen h-977"   id='screen4'>
+      <div className="screen h-977 "   id='screen4'>
         { isMobile? <ThirdFrameSM  />:<ScreenAnimation2><ThirdFrame  /></ScreenAnimation2>}
       
       </div>
@@ -185,7 +204,7 @@ const translateY = useTransform(y, input2, output2)
         
       </div>
       {/* <div className={`screen h-fit z-50 ${onAnim ? 'animate-coverLayer' : ''}`} id='screen6'> */}
-        <div className={`screen h-fit z-50 `}  id='screen6'>
+        <div className={`screen h-fit z-50  bg-orange-300 `}  id='screen6'>
         {/* trigger animation */}
 
         {isMobile ?
@@ -206,7 +225,7 @@ const translateY = useTransform(y, input2, output2)
                     y:'0%',
                   }}
             ref={ref}
-            className='z-50 absolute w-full mb-20 mr-4 '
+            className='z-50 absolute w-full mb-20 '
              transition={ {delay: 5, duration: 1, ease: [0.6, 0.01, -0.05, 0.9]} }
           >
             <FifthFrame />

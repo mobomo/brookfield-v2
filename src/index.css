@@ -69,12 +69,28 @@
     @apply w-40 h-80 bg-green-500 p-2 flex-shrink-0
   }
   .heading {
+    @apply text-4xl  font-playfair antialiased  font-bold;
+  }
+
+    .headingXL {
     @apply text-5xl  font-playfair antialiased  font-bold;
   }
-  .textContent {
+
+
+  .textContentMD {
+    @apply text-base font-normal font-opensans antialiased tracking-tighter;
+  }
+  .textContentXL {
     @apply text-xl font-normal font-opensans antialiased tracking-tighter;
   }
+    .textContentLG {
+    @apply text-lg font-normal font-opensans antialiased tracking-tighter;
+  }
   .textContentLarger {
+    @apply text-xl font-normal font-opensans antialiased tracking-tight;
+  }
+
+  .textContentLargerXL {
     @apply text-2xl font-normal font-opensans antialiased tracking-tight;
   }
 

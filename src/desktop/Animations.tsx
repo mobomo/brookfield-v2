@@ -129,7 +129,7 @@ export const Animation6 = () => {
        return <Lottie
     options={defaultOptions}
     height={200}
-    width={1200}
+    width={1100}
   />;
 };
 
@@ -143,7 +143,7 @@ export const Animation6a = () => {
        return <Lottie
     options={defaultOptions}
     height={200}
-    width={1200}
+    width={1100}
   />;
 };
 export const Animation7 = () => {

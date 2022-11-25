@@ -20,7 +20,7 @@ export const FirsthFrame = () => {
                   </div>
                   <div className='
                   flex flex-col text-center justify-center items-center mt-3 text-white text-xs  font-normal gap-4 antialiased tracking-tighter'>
-                  <div className=' p-4'>
+                  <div className='  '>
                     We have delivered superior long-term returns by following a patient, value-oriented
                     approach to investing, growing the breadth and depth of our portfolio over the years...
                   </div>

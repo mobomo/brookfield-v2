@@ -26,7 +26,7 @@ export const Animation1 = () => {
 
 export const Animation2 = () => {
     const defaultOptions = {
-      loop: false,
+      loop: true,
       autoplay: true, 
       animationData: animations.anim4 ,
     }
@@ -40,7 +40,7 @@ export const Animation2 = () => {
 
 export const Animation2a = () => {
     const defaultOptions = {
-      loop: true,
+      loop: false,
       autoplay: true, 
       animationData: animations.anim4 ,
     }
@@ -188,34 +188,80 @@ export const Animation6 = () => {
 }
 
 export const Animation6a = () => {
-    const defaultOptions = {
+    const defaultOptions1 = {
       loop: false,
       autoplay: true, 
-      animationData: animations.iconRow,
+      animationData: animations.icon1,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid meet"
+      }
     }
-
-  return <Lottie
-    options={defaultOptions}
-    height={300}
-    width={300}
-    
-  />;
-};
-
-export const Animation6b = () => {
-    const defaultOptions = {
+  const defaultOptions2 = {
       loop: false,
       autoplay: true, 
-      animationData: animations.iconRow,
+    animationData: animations.icon2,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid meet"
+      }
+  }
+  const defaultOptions3 = {
+      loop: false,
+      autoplay: true, 
+    animationData: animations.icon3,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid meet"
+      }
+  }
+  const defaultOptions4 = {
+      loop: false,
+      autoplay: true, 
+    animationData: animations.icon4,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid meet"
+      }
+  }
+  const defaultOptions5 = {
+      loop: false,
+      autoplay: true, 
+    animationData: animations.icon5,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid meet"
+      }
     }
-
-  return <Lottie
-    options={defaultOptions}
-    height={300}
-    width={300}
+  return <div className='flex  flex-col w-97 px-20  gap-14'>
+    <div className='flex'>
+        <Lottie
+    options={defaultOptions1}
+    height={100}
+    width={100}
     
-  />;
-};
+    />;
+    <Lottie
+      options={defaultOptions2}
+      height={100}
+      width={100}
+    />
+    <Lottie
+      options={defaultOptions3}
+      height={100}
+      width={100}
+    />
+     </div>
+    <div className='flex px-10'>
+        <Lottie
+      options={defaultOptions4}
+      height={100}
+      width={100}
+    />
+    <Lottie
+      options={defaultOptions5}
+      height={100}
+      width={100}
+    
+/>
+  </div>
+  </div>
+}
 export const Animation7 = () => {
     const defaultOptions = {
       loop: false,

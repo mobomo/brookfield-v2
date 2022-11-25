@@ -22,10 +22,16 @@ const SecondFrame = () => {
                       onLeave={() => toggle(!on)}
                       bottomOffset='300px'
                       /> */}
-      <div className='flex  w-fit px-40 gap-20 '>
-              <div className=' flex flex-col items-start pl-32 min-w-100 gap-3'>
-                      <div className='flex text-white text-4.75xl  font-mediumplus font-playfair '>Two entities, distinct offerings</div>
-                      <div className='textContent max-w-98 text-left  '>
+      <div className='flex  w-fit px-40 gap-2  '>
+
+              <div className='  flex flex-col items-start pl-20 gap-3  
+                                min-w-70 lg:min-w-97 lg:pl-10 xl:min-w-100 xl:pl-32'>
+          
+                      <div className='flex text-white text-3xl  
+                                      font-mediumplus font-playfair text-left lg:text-3.75xl xl:text-4.5xl'>
+                      Two entities, distinct offerings</div>
+          
+                      <div className='textContentMD lg:textContentLG xl:textContentXL max-w-98 text-left  '>
                         Each with day-to-day operations preserved and the focus of a dedicated management team.
                       </div>
               </div>
