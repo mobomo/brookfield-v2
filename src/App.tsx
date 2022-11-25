@@ -31,6 +31,7 @@ import SeventhFrame from './desktop/SeventhFrame'
 
 
 function App() {
+
   // const [titleVisible, setTitleVisible] = useState(false);
   const {scrollY} = useScroll()
 
@@ -161,7 +162,7 @@ const translateY = useTransform(y, input2, output2)
 
        </div> 
      
-      <div className="screen  h-9777"  id='screen2'>
+      <div className="screen h-9777"  id='screen2'>
   
         {isMobile ? <FirstFrameSM /> : <FirstFrame />}
  

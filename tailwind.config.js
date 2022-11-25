@@ -1,80 +1,60 @@
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
-    keyframes: {
-      coverLayer: {
-        "0%": {
-          opacity: "0.5",
-          transform: "translateY(20%) scale(0.6)",
-        },
-        "50%": {
-          opacity: "0.8",
-          transform: "translateY(30%) scale(0.8)",
-        },
-        "100%": {
-          opacity: "1",
-          transform: "translateY(-90%) scale(1)",
-        },
-      },
-      layerOpacity: {
-        "0%": {
-          opacity: "0",
-        },
-        "100%": {
-          opacity: "1",
-        },
-      },
-      moveLayer: {
-        from: {
-          transform: "translateY(0)",
-        },
-        to: {
-          transform: "translateY(25px)",
-        },
+// const extendTheme = require('./extendTheme')
+// const plugin = require("tailwindcss/plugin");
+const theme = require("tailwindcss/defaultTheme");
+const colors = require('tailwindcss/colors');
+const plugin = require('tailwindcss/plugin');
+
+
+
+
+
+
+const deepMap = (val, fn) => {
+  const it = (val) => {
+    if (Array.isArray(val)) return val.map(it);
+
+    if (typeof val === "object") {
+      const res = {};
+      for (const key of Object.keys(val)) {
+        res[key] = it(val[key]);
       }
+      return res;
+    }
 
+    return fn(val);
+  };
 
-    },
-    animation: {
-      "fade-in-down": "fade-in-down 0.5s ease-out",
-      expand: "expand 1.5s ease-out",
-      // move: "move 2s ease-out",
-      coverLayer: "coverLayer 2s ease-out",
-      layerOpacity: "layerOpacity 2s ease-out",
-      moveLayer1: "moveLayer 2s  linear 0.5s 1 normal forwards",
-      moveLayer2: "moveLayer 1s  linear 0.5s 1 normal forwards",
-    },
+  return it(val);
+};
 
+const pxify = (val) => {
+  if (typeof val === "string")
+    val = val.replace(/((\d*\.)?\d+)rem\b/g, (match, num) => `${16 * +num}px`);
 
+  return val;
+};
 
-    screens: {
+const emify = (val) => {
+  if (typeof val === "string")
+    val = val.replace(/((\d*\.)?\d+)rem\b/g, (match, num) => `${num}em`);
 
-      'sm': '410px',
-      // => @media (min-width: 640px) { ... }
+  return val;
+};
 
-      'md': '768px',
-      // => @media (min-width: 768px) { ... }
+const suffixKeys = (obj, suffix) => {
+  return Object.fromEntries(
+    Object.entries(obj).map(([k, v]) => [k + suffix, v])
+  );
+};
 
-      'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
+const pxifyDefaults = (theme, keys) => {
+  const res = {};
+  for (const key of keys) res[key] = deepMap(theme[key], pxify);
+  return res;
+};
 
-      'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
-
-      '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
-
-      '3xl': '1850px',
-      // => @media (min-width: 1905px) { ... }
-
-      '4xl': '2300px',
-      // => @media (min-width: 2545px) { ... }
-    },
-    extend: {
-      // margin: {
-      //   '5px': '5px',
-      //   '120px': '120px',
-      // },
+const extendTheme = {
+   extend: {
       colors: {
         // "brandblue": "#082c5c",
         "brandblue": "#002A4E",
@@ -101,21 +81,21 @@ module.exports = {
         "17/18": "94.4444444%",
         "18/19": "94.7368421%",
         "19/20": "95%",
-        '150': '75em',
-        '140': '70em',
-        '130': '65em',
-        '120': '60em',
-        '110': '55em',
-        '100': '50em',
-        '99': '45em',
-        '98': '40em',
-        '97': '35em',
-        '975': '32.5em',
-        '977': '30em',
-        '9775': '27.5em',
-        '9777': '25em',
-            '97777': '24em',
-        '70': '35em',
+        '150': '75rem',
+        '140': '70rem',
+        '130': '65rem',
+        '120': '60rem',
+        '110': '55rem',
+        '100': '50rem',
+        '99': '45rem',
+        '98': '40rem',
+        '97': '35rem',
+        '975': '32.5rem',
+        '977': '30rem',
+        '9775': '27.5rem',
+        '9777': '25rem',
+            '97777': '24rem',
+        '70': '35rem',
 
       },
             height: {
@@ -138,23 +118,26 @@ module.exports = {
         "17/18": "94.4444444%",
         "18/19": "94.7368421%",
         "19/20": "95%",
-        '150': '75em',
-        '140': '70em',
-        '130': '65em',
-        '120': '60em',
-        '110': '55em',
-        '100': '50em',
-        '99': '45em',
-        '98': '40em',
-        '97': '35em',
-        '975': '32.5em',
-        '977': '30em',
-        '9775': '27.5em',
-        '9777': '25em',
-            '97777': '24em',
-        '70': '35em',
+        '150': '75rem',
+        '140': '70rem',
+        '130': '65rem',
+        '120': '60rem',
+        '110': '55rem',
+        '100': '50rem',
+        '99': '45rem',
+        '98': '40rem',
+        '97': '35rem',
+        '975': '32.5rem',
+        '977': '30rem',
+        '9775': '27.5rem',
+              '9777': '25rem',
+        // '9777': `${16 * 25}px`,
+            '97777': '24rem',
+        '70': '35rem',
 
       },
+            
+              
       maxWidth: {
         "1/7": "14.2857143%",
         "2/7": "28%",
@@ -162,22 +145,22 @@ module.exports = {
         "4/7": "57.1428571%",
         "5/7": "71.4285714%",
         "6/7": "85.7142857%",
-        '150': '75em',
-        '140': '70em',
-        '130': '65em',
-        '120': '60em',  
-        '110': '55em',
-        '100': '50em',
-        '99': '45em',
-                '985': '42.5em',
-        '98': '40em',
-        '97': '35em',
-        '975': '32.5em',
-        '977': '30em',
-        '9775': '27.5em',
-        '9777': '25em',
-        '40': '20em',
-        '70': '35em',
+        '150': '75rem',
+        '140': '70rem',
+        '130': '65rem',
+        '120': '60rem',  
+        '110': '55rem',
+        '100': '50rem',
+        '99': '45rem',
+                '985': '42.5rem',
+        '98': '40rem',
+        '97': '35rem',
+        '975': '32.5rem',
+        '977': '30rem',
+        '9775': '27.5rem',
+        '9777': '25rem',
+        '40': '20rem',
+        '70': '35rem',
       },
             minWidth: {
         "1/7": "14.2857143%",
@@ -186,22 +169,22 @@ module.exports = {
         "4/7": "57.1428571%",
         "5/7": "71.4285714%",
         "6/7": "85.7142857%",
-        '150': '75em',
-        '140': '70em',
-        '130': '65em',
-        '120': '60em',  
-        '110': '55em',
-        '100': '50em',
-        '99': '45em',
-                '985': '42.5em',
-        '98': '40em',
-        '97': '35em',
-        '975': '32.5em',
-        '977': '30em',
-        '9775': '27.5em',
-        '9777': '25em',
-        '40': '20em',
-        '70': '35em',
+        '150': '75rem',
+        '140': '70rem',
+        '130': '65rem',
+        '120': '60rem',  
+        '110': '55rem',
+        '100': '50rem',
+        '99': '45rem',
+                '985': '42.5rem',
+        '98': '40rem',
+        '97': '35rem',
+        '975': '32.5rem',
+        '977': '30rem',
+        '9775': '27.5rem',
+        '9777': '25rem',
+        '40': '20rem',
+        '70': '35rem',
       },
       margin: {
         '22': '6rem',
@@ -287,6 +270,134 @@ module.exports = {
         'bold': 700,
         'extrabold': 800,
         'black': 900,
+      },
+    },
+}
+
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+
+
+  theme: {
+
+    ...pxifyDefaults(theme, [
+      "borderRadius",
+      "lineHeight",
+      "maxWidth",
+    ]),
+
+    spacing: {
+      ...deepMap(theme.spacing, pxify),
+      ...deepMap(suffixKeys(theme.spacing, "-r"), emify),
+    },
+    fontSize: {
+      ...deepMap(theme.fontSize, pxify),
+      ...deepMap(suffixKeys(theme.fontSize, "-r"), emify),
+    },
+
+    keyframes: {
+      coverLayer: {
+        "0%": {
+          opacity: "0.5",
+          transform: "translateY(20%) scale(0.6)",
+        },
+        "50%": {
+          opacity: "0.8",
+          transform: "translateY(30%) scale(0.8)",
+        },
+        "100%": {
+          opacity: "1",
+          transform: "translateY(-90%) scale(1)",
+        },
+      },
+      layerOpacity: {
+        "0%": {
+          opacity: "0",
+        },
+        "100%": {
+          opacity: "1",
+        },
+      },
+      moveLayer: {
+        from: {
+          transform: "translateY(0)",
+        },
+        to: {
+          transform: "translateY(25px)",
+        },
+      }
+
+
+    },
+    animation: {
+      "fade-in-down": "fade-in-down 0.5s ease-out",
+      expand: "expand 1.5s ease-out",
+      // move: "move 2s ease-out",
+      coverLayer: "coverLayer 2s ease-out",
+      layerOpacity: "layerOpacity 2s ease-out",
+      moveLayer1: "moveLayer 2s  linear 0.5s 1 normal forwards",
+      moveLayer2: "moveLayer 1s  linear 0.5s 1 normal forwards",
+    },
+
+
+
+    screens: {
+
+      'sm': '410px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+
+      '3xl': '1850px',
+      // => @media (min-width: 1905px) { ... }
+
+      '4xl': '2300px',
+      // => @media (min-width: 2545px) { ... }
+    },
+    
+
+
+    extend: {
+      colors: {
+        ...deepMap(extendTheme.extend.colors,pxify)
+      },
+      width: {
+        ...deepMap(extendTheme.extend.width,pxify)
+      },
+      height: {
+        ...deepMap(extendTheme.extend.height, pxify)
+      },
+      
+      maxWidth: {
+        ...deepMap(extendTheme.extend.maxWidth, pxify)
+      },
+      minWidth: {
+        ...deepMap(extendTheme.extend.minWidth, pxify)
+      },
+      margin: {
+        ...deepMap(extendTheme.extend.margin, pxify)
+      },
+      padding: {
+        ...deepMap(extendTheme.extend.padding, pxify)
+      },
+      fontFamily: {
+        ...deepMap(extendTheme.extend.fontFamily, pxify)
+      },
+      fontSize: {
+        ...deepMap(extendTheme.extend.fontSize, pxify)
+      },
+      fontWeight: {
+        ...deepMap(extendTheme.extend.fontWeight, pxify)
       },
     },
     // fontFamily: {

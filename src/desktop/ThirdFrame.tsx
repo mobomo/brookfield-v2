@@ -20,7 +20,7 @@ const ThirdFrame = () => {
           <div className='text-4.75xl  font-mediumplus font-playfair pr-16 '>
                 Another way to invest with Brookfield
           </div>
-          <div className='textContent max-w-977 '>
+          <div className='textContent max-w-98 '>
                  Investors looking for a pure-play asset manager to invest in--one with the backing of a company with over [50] years of investing experience and a strong track record of delivering returns to shareholders           
           </div>
         </div>
