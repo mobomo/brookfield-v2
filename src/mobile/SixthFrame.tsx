@@ -19,11 +19,11 @@ function FifthFrame() {
       <div>
 
         <Animation9 />
-        
+
       </div>
       <div className='text-white text-center flex flex-col gap-3'>
-        <div className='font-opensans font-normal  text-xs antialiased'>...allowing investors the flexibility to invest in the Brookfield businesses they prefer</div>
-        <div className='font-opensans font-normal  text-xs antialiased'>All with the backing of Brookfield.</div>
+        <div className='font-opensans font-normal  text-xs antialiased'>Allows investors the flexibility to invest in the businesses or sector they prefer</div>
+        <div className='font-opensans font-normal  text-xs antialiased'>All with the backing and continuity that Brookfield provides.</div>
       </div>
       <div className='flex justify-center'>
                                   <svg width="7" height="65" viewBox="0 0 7 65" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,8 +31,8 @@ function FifthFrame() {
                         <line x1="3.5" y1="61.9048" x2="3.5" y2="-7.62939e-06" stroke="#F5F5F5"/>
                         </svg>
       </div>
-    
-    
+
+
     </div>
   )
 }

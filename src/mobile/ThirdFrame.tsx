@@ -8,7 +8,7 @@ function ThirdFrame() {
 
               <div className='font-playfair font-mediumplus  text-2xl'>Another way to invest with Brookfield</div>
               <div className='font-playfair font-normal  text-xs  antialiased tracking-tighter'>
-                Investors looking for a pure-play asset manager to invest in-one with the backing of a company with over [50] years of investing experience and a strong track record of delivering returns to shareholders
+                Investors now have the option to invest in a pure-play asset manager backed by a company with large scale capital and a strong track record of delivering returns to shareholders
               </div>
        </div>
       <div className='flex justify-center p-4'>

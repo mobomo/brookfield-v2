@@ -12,7 +12,7 @@ export default FrameTitle
 export const Frame0 = () => {
   return (
     <div className='
-      flex text-white text-5xl  w-120  
+      flex text-white text-5xl  w-120
       text-center font-playfair font-mediumplus
       justify-center self-center'>
       Evolving to offer the best of both worlds</div>
@@ -26,9 +26,7 @@ export const Frame00 = () => {
     <div className='
       flex text-white text-2xl text-center
       font-light   flex-wrap self-center max-w-120 leading-8 mt-2'>
-      We are leveraging a century of private investment experience owning and
-      operating assets and twenty years of offering private investment opportunities to LP,
-      creating a new opportunity for investors to benefit from our investment expertise
+      With a century of experience owning and operating assets, and twenty years offering private investment opportunities to the world’s most sophisticated investors, we are creating a new way for investors to benefit from our expertise
     </div>
   )
 };

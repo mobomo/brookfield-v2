@@ -3,11 +3,11 @@ import { Animation3 } from '../desktop/Animations'
 
 const SecondFrame = () => {
   const [on, toggle] = React.useState(false)
-  
+
   return (
     <div className='text-white  centerColumn  text-center w-fit h-fit  gap-10 '>
       <div className='text-3xl font-semibold font-playfair leading-9 max-w-100'>
-                      We believe our business has greater potential for even more growth with the creation of a new listed pure-pay alternative asset manager.
+                      Our business has greater potential for even more growth with the creation of a new pure-pay alternative asset manager.
       </div>
       <div className='flex justify-center pr-64 '>
                     <svg width="268" height="168" viewBox="0 0 268 168" fill="none" xmlns="http://www.w3.org/2000/svg">

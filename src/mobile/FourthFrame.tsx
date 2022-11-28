@@ -18,13 +18,15 @@ function FourthFrame() {
       </div>
       <div className='text-brandblue antialiased tracking-tighter px-10 gap-3 flex flex-col'>
         <div className=' text-2xl  font-semibold font-playfair '>Brookfield Corporation</div>
-        <div className=' font-playfair font-normal  text-sm  '>Reinvest the bulk of its earnings for a steady return with a long-term horizon in mind</div>
+        <div className=' font-playfair font-normal  text-sm  '>Deploys large-scale, flexible capital across our operating businesses</div>
         <div className='aspect-video font-playfair font-normal  text-sm  ml-3'>
-          <li>Retains / Reinvests the bulk of its earnings</li></div>
+          <li>Retains and reinvests the majority of earnings</li>
+          <li>Focused on compounding capital over the long-term</li>
+          </div>
       </div>
-     
-    
-    
+
+
+
     </div>
   )
 }
