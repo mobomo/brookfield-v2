@@ -198,7 +198,7 @@ const translateY = useTransform(y, input2, output2)
       
       </div>
 
-      <div className="screen bg-lightBlue h-fit -z-10 relative"  id='screen5'>
+      <div className="screen bg-lightBlue h-fit z-10 relative"  id='screen5'>
 
         {isMobile ? <FourthFrameSM /> : <FourthFrame />}
         
