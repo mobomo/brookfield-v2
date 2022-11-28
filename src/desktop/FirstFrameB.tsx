@@ -1,12 +1,10 @@
 import { Animation1 } from './Animations'
 import { FrameTitle, Frame0, Frame00 } from '../desktop'
 import { FrameTitleSM, Frame0SM, Frame00SM } from '../mobile'
-import useMediaQueries from '../hooks/getMediaQueries'
 import React from 'react'
 import useWindowDimensions from '../hooks/getWindowDimensions'
 
 const FirstFrame = () => {
-  const { screenSize } = useMediaQueries();
   const { width } = useWindowDimensions();
   const [isMobile, setIsMobile] = React.useState(false);
   React.useEffect(() => {

@@ -1,14 +1,12 @@
 
-import { useEffect, useState, useRef, useLayoutEffect, createRef, ReactNode } from 'react';
+import { useEffect, useState, useRef, ReactNode } from 'react';
 import useWindowDimensions from './hooks/getWindowDimensions';
-import useScrollPosition from './hooks/getScrollPosition';
 import { useScroll, motion, useTransform, useMotionValue } from 'framer-motion'
 import './index.css'
-import { ScreenAnimation2, ScreenAnimation3, ScreenAnimation4 } from './animations/Screens';
+import { ScreenAnimation2 } from './animations/Screens';
 
 import {FrameTitleSM} from './mobile'
 import FirstFrameSM from './mobile/FirstFrame'
-import FirstFramebSM from './mobile/FirstFramebSM';
 import { Frame0SM, Frame00SM  } from './mobile'
 import  SecondFrameSM  from './mobile/SecondFrame'
 import  ThirdFrameSM  from './mobile/ThirdFrame'
@@ -20,37 +18,20 @@ import SeventhFrameSM from './mobile/SeventhFrame'
 import FrameTitle from './desktop/'
 import FirstFrame from './desktop/FirstFrame'
 import { Frame0, Frame00  } from './desktop'
-import FirstFrameB from './desktop/FirstFrameB'
 import  SecondFrame  from './desktop/SecondFrame'
 import  ThirdFrame  from './desktop/ThirdFrame'
 import  FourthFrame  from './desktop/FourthFrame'
 import  FifthFrame  from './desktop/FifthFrame'
 import  SixthFrame  from './desktop/SixthFrame'
 import SeventhFrame from './desktop/SeventhFrame'
-// import { Frame0, Frame00 } from './frames';
 
 
 function App() {
-
-  // const [titleVisible, setTitleVisible] = useState(false);
   const {scrollY} = useScroll()
-
-// console.log('scrollY.stop: ', scrollY.stop);
-// console.log('scrollY.updateAndNotify: ', scrollY.updateAndNotify);
-// console.log('scrollY.set: ', scrollY.set);
-// console.log('scrollY.onChange: ', scrollY.onChange);
-// console.log('scrollY.isAnimating: ', scrollY.isAnimating);
-// console.log('scrollY.hasAnimated,: ', scrollY.hasAnimated,);
-// console.log('scrollY.get(): ', scrollY.get());
-// console.log('crollY.getPrevious: ', scrollY.getPrevious);
 
   const { width } = useWindowDimensions();
   const [isMobile, setIsMobile] = useState(false);
-  const [onAnim, toggleAnim] = useState(false);
   const [scroll, setScroll] = useState(0);
-
-
-
 
   useEffect(() => {
     if (width < 900) {
@@ -60,46 +41,18 @@ function App() {
     }
   }, [width]);
 
-    // useEffect(() => {
-    // if (width < 1000) {
-    //   setIsLaptop(true)
-    //   setIsIpad(false)
-    //   setIsMobile(false)
-    // } else if (width < 820) {
-    //   setIsIpad(true)
-    //   setIsLaptop(false)
-    //   setIsMobile(false)
-    // } else if (width < 600) {      
-    //   setIsMobile(true)
-    //   setIsIpad(false)
-    //   setIsLaptop(false)
-    // } else {
-    //   setIsMobile(false)
-    //   setIsLaptop(false)
-    //   setIsIpad(false)
-    // }
-
-
 
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
   target: ref,
-    // offset: ["start end", "end end"],
    offset: ["0.5 1", "1 1"],
-
   })
 
-
-  
   useEffect(() => {
   return scrollY.onChange((latest) => {
     setScroll(scrollYProgress.get())
-    // console.log("Page scroll: ", latest, scrollYProgress.get())
   })
   }, [])
-
-
-
 
   const OpacityAnimation = ({children, duration, initial}:{children:ReactNode, duration?:number,initial?:number}) => {
     return <motion.div
@@ -116,8 +69,6 @@ function App() {
       {children}
     </motion.div>
     }
-  
-  
 
   const OnScrollAnimation = ({ children, duration = 1, initial = 0, distance = 10 }: { children: ReactNode, duration?: number, initial?: number, distance?: number; }) => {
 
@@ -133,7 +84,6 @@ const {scrollY} = useScroll()
   useEffect(() => {
   return scrollY.onChange((latest) => {
     setScroll(scrollYProgress.get())
-    // console.log("Page scroll X: ", latest, scrollYProgress.get())
   })
       }, [])
     return <motion.div
@@ -160,8 +110,6 @@ const translateY = useTransform(y, input2, output2)
 
   return (
     <div className="h-fit">
-    
-
      <div className=" screen "  id='screen1'>
 
         <div className=' p-10 mb-16 ' id=''> 
@@ -176,9 +124,6 @@ const translateY = useTransform(y, input2, output2)
                            { isMobile?<Frame0SM />:<UpAnimation distance={-20} duration={2}> <Frame0 /></UpAnimation> }
           {isMobile ? <Frame00SM /> : <UpAnimation distance={-20} initial={ 0 } duration={2}> <Frame00 /></UpAnimation>}
                        </div>
-
-
-
        </div> 
      
       <div className="screen h-70"  id='screen2'>
@@ -203,7 +148,6 @@ const translateY = useTransform(y, input2, output2)
         {isMobile ? <FourthFrameSM /> : <FourthFrame />}
         
       </div>
-      {/* <div className={`screen h-fit z-50 ${onAnim ? 'animate-coverLayer' : ''}`} id='screen6'> */}
         <div className={`screen h-fit z-50  bg-orange-300 `}  id='screen6'>
         {/* trigger animation */}
 
@@ -220,7 +164,6 @@ const translateY = useTransform(y, input2, output2)
                     scaleX: scrollYProgress,
                     scaleY: scrollYProgress,
                     opacity,
-                    // translateY:-100*scroll*4
                     translateY,
                     y:'0%',
                   }}

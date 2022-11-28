@@ -16,7 +16,6 @@ const FirstFrame = () => {
       useEffect(() => {
   return scrollY.onChange((latest) => {
     setScroll(scrollYProgress.get())
-    // console.log("Page scroll 2: ", latest, scrollYProgress.get())
   })
       }, [])
   
@@ -25,21 +24,15 @@ const FirstFrame = () => {
   return (
     <motion.div
             initial={{
-              //  scaleX: '100%',
-              // scaleY: 1,
         opacity: 0.8,
               
               y:'75%',
             }}
                   style={{
-                    // scaleX: scrollYProgress,
-                    // scaleY: scrollYProgress,
                             opacity: scrollYProgress,
                             translateY:-100*scroll*7.5
                   }}
             ref={ref}
-            // animate={{translateY: scroll2}}
-            // className='z-50 absolute'
       exit={{ opacity: 0 }}
           
       className='text-white centerColumn  gap-10 z-40 absolute '

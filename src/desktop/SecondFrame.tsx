@@ -1,6 +1,5 @@
 import React from 'react'
 import { Animation3 } from '../desktop/Animations'
-import {Waypoint} from 'react-waypoint'
 
 const SecondFrame = () => {
   const [on, toggle] = React.useState(false)
@@ -18,10 +17,6 @@ const SecondFrame = () => {
                           <line x1="1" y1="83.5" x2="265" y2="83.5" stroke="#F5F5F5"/>
                           </svg>
       </div>
-                                    {/* <Waypoint
-                      onLeave={() => toggle(!on)}
-                      bottomOffset='300px'
-                      /> */}
       <div className='flex  w-fit px-40 gap-2  '>
 
               <div className='  flex flex-col items-start pl-20 gap-3  

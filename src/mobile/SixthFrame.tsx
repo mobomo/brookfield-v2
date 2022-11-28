@@ -1,10 +1,5 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React from 'react'
 import { Animation9 } from './Animations'
-
-
-
-
-
 
 function FifthFrame() {
   return (

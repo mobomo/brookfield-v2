@@ -5,8 +5,6 @@ import {Waypoint} from 'react-waypoint'
 
 const FifthFrame = () => {
   const [on, toggle] = React.useState(true);
-
-
   return (
     <div className={`centerColumn  h-full w-full pb-20 pt-0 gap-0 bg-white`} >
       <Waypoint

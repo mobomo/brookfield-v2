@@ -1,6 +1,5 @@
 import { Animation1 } from './Animations'
-import { Frame000 } from './'
-import { useEffect, useState, useRef } from 'react';
+import {  useState } from 'react';
 
 export const FirsthFrame = () => {
   const [on, toggle] = useState(false);
