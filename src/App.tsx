@@ -110,7 +110,7 @@ const translateY = useTransform(y, input2, output2)
 
   return (
     <div className="h-fit">
-     <div className=" screen "  id='screen1'>
+     <div className=" screen  -mb-32"  id='screen1'>
 
         <div className=' p-10 mb-16 ' id=''> 
           {isMobile ?
@@ -120,15 +120,15 @@ const translateY = useTransform(y, input2, output2)
             </OpacityAnimation>}
           
         </div>
-                      <div id='intro' className='flex flex-col    gap-3 items-center'>
+                      <div id='intro ' className='flex flex-col    gap-3 items-center '>
                            { isMobile?<Frame0SM />:<UpAnimation distance={-20} duration={2}> <Frame0 /></UpAnimation> }
-          {isMobile ? <Frame00SM /> : <UpAnimation distance={-20} initial={ 0 } duration={2}> <Frame00 /></UpAnimation>}
+          {isMobile ? <Frame00SM /> : <UpAnimation distance={-20}  duration={2}> <Frame00 /></UpAnimation>}
                        </div>
        </div> 
      
-      <div className="screen h-70"  id='screen2'>
+      <div className="screen h-70 "  id='screen2'>
   
-        {isMobile ? <FirstFrameSM /> : <FirstFrame />}
+        {isMobile ? <FirstFrameSM /> :  <FirstFrame />}
  
          
       </div>
@@ -148,31 +148,11 @@ const translateY = useTransform(y, input2, output2)
         {isMobile ? <FourthFrameSM /> : <FourthFrame />}
         
       </div>
-        <div className={`screen h-fit z-50  bg-orange-300 `}  id='screen6'>
-        {/* trigger animation */}
+        <div className={`screen h-fit z-50 `}  id='screen6'>
 
         {isMobile ?
-          <FifthFrameSM /> :
-          <motion.div
-            initial={{
-              scaleX: '100%',
-              scaleY: 1,
-              opacity: 0,
-              y:'-20%',
-            }}
-                  style={{
-                    scaleX: scrollYProgress,
-                    scaleY: scrollYProgress,
-                    opacity,
-                    translateY,
-                    y:'0%',
-                  }}
-            ref={ref}
-            className='z-50 absolute w-full mb-20 '
-             transition={ {delay: 5, duration: 1, ease: [0.6, 0.01, -0.05, 0.9]} }
-          >
-            <FifthFrame />
-          </motion.div>}
+          <FifthFrameSM /> :  <FifthFrame /> }
+       
 
       </div>
       <div className="screen h-fit"  id='screen7'>
@@ -187,3 +167,25 @@ const translateY = useTransform(y, input2, output2)
 }
 
 export default App;
+
+// {/* /// animation wrap below */}
+  //  {/* <motion.div
+  //           initial={{
+  //             scaleX: '100%',
+  //             scaleY: 1,
+  //             opacity: 0,
+  //             y:'-20%',
+  //           }}
+  //                 style={{
+  //                   scaleX: scrollYProgress,
+  //                   scaleY: scrollYProgress,
+  //                   opacity,
+  //                   translateY,
+  //                   y:'0%',
+  //                 }}
+  //           ref={ref}
+  //           className='z-50 absolute w-full mb-20 '
+  //            transition={ {delay: 5, duration: 1, ease: [0.6, 0.01, -0.05, 0.9]} }
+  //         >
+  //           <FifthFrame />
+  //         </motion.div>} */}
