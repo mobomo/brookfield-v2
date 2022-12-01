@@ -13,15 +13,15 @@ const FifthFrame = () => {
       />
       <div className='centerRow gap-2 max-w-140 '>
         <div className='text-brandblue flex flex-col items-start gap-5 pr-0 max-w-100 min-w-70 '>
-                <div className='heading xl:headingXL min-w-100 text-brandblue'>Brookfield Asset Management</div>
-                <div className='textContentLarger xl:textContentLargerXL  max-w-100 min-w-99'>
+                <div className='heading min-w-100 text-brandblue'>Brookfield Asset Management</div>
+                <div className='text-xl  max-w-100 min-w-99'>
                   An asset-lite manager investing third party capital through its private funds
                 </div>
-                <div className='textContentLarger xl:textContentLargerXL pl-12 flex flex-col gap-2 max-w-100'> 
+                <ul className='text-xl pl-12 flex flex-col gap-2 max-w-100 list'> 
                   <li >Manages money for Limited Partners</li>
                   <li >Requires little or no [balance sheet] capital</li>
                   <li >Higher dividend payout ratio</li>
-                </div>
+                </ul>
         </div>
         <div className=''>
        {  on? <Animation5  />:<Animation5a  />}

@@ -159,7 +159,7 @@ export const Animation6 = () => {
     height={100}
     width={100}
     
-    />;
+    />
     <Lottie
       options={defaultOptions2}
       height={100}
@@ -235,7 +235,7 @@ export const Animation6a = () => {
     height={100}
     width={100}
     
-    />;
+    />
     <Lottie
       options={defaultOptions2}
       height={100}

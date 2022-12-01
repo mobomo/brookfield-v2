@@ -23,7 +23,7 @@ export const Frame00SM = () => {
   // mobil:mt-20 mobil:w-5/7
   return (
     <div className='
-      flex text-white text-xs text-center
+      flex text-white text-md text-center
       font-mediumplus  flex-wrap antialiased tracking-tighter  px-10 max-w-70'>
       With a century of experience owning and operating assets, and twenty years offering private investment opportunities to the world’s most sophisticated investors, we are creating a new way for investors to benefit from our expertise
     </div>

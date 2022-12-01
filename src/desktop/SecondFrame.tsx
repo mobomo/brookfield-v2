@@ -23,10 +23,10 @@ const SecondFrame = () => {
                                 min-w-70 lg:min-w-97 lg:pl-10 xl:min-w-100 xl:pl-32'>
           
                       <div className='flex text-white text-3xl  
-                                      font-mediumplus font-playfair text-left lg:text-3.75xl xl:text-4.5xl'>
+                                      font-mediumplus font-playfair text-left'>
                       Two entities, distinct offerings</div>
           
-                      <div className='textContentMD lg:textContentLG xl:textContentXL max-w-98 text-left  '>
+                      <div className='text-xl max-w-98 text-left  '>
                         Each with day-to-day operations preserved and the focus of a dedicated management team.
                       </div>
               </div>

@@ -42,7 +42,7 @@
     @apply text-xl font-semibold font-playfair sm:text-2xl md:text-3xl lg:text-4xl xl:text-4.75xl;
   }
   .smallText{
-    @apply text-xs font-semibold font-playfair sm:text-sm md:text-base lg:text-lg xl:text-xl;
+    @apply text-sm font-semibold font-playfair sm:text-sm md:text-base lg:text-lg xl:text-xl;
   }
   .centerColumn {
     @apply flex flex-col items-center justify-center flex-nowrap content-between ;
@@ -69,7 +69,7 @@
     @apply w-40 h-80 bg-green-500 p-2 flex-shrink-0
   }
   .heading {
-    @apply text-4xl  font-playfair antialiased  font-bold;
+    @apply text-3xl  font-playfair antialiased  font-bold;
   }
 
     .headingXL {
@@ -94,5 +94,9 @@
     @apply text-2xl font-normal font-opensans antialiased tracking-tight;
   }
 
+}
+
+.list{
+  list-style: unset;
 }
 
