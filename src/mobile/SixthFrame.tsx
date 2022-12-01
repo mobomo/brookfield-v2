@@ -12,7 +12,7 @@ function FifthFrame() {
       </div>
       <div className='text-white text-center '>
         <div className='font-playfair font-mediumplus  text-2xl'>A proven strategy</div>
-        <div className='font-opensans font-normal  text-xs antialiased'>
+        <div className='font-opensans font-normal  text-sm antialiased'>
           Leveraging a history of successfully providing public market access to Brookfield's investing expertise
         </div>
       </div>
@@ -22,8 +22,8 @@ function FifthFrame() {
 
       </div>
       <div className='text-white text-center flex flex-col gap-3'>
-        <div className='font-opensans font-normal  text-xs antialiased'>Allows investors the flexibility to invest in the businesses or sector they prefer</div>
-        <div className='font-opensans font-normal  text-xs antialiased'>All with the backing and continuity that Brookfield provides.</div>
+        <div className='font-opensans font-normal  text-sm antialiased'>Allows investors the flexibility to invest in the businesses or sector they prefer</div>
+        <div className='font-opensans font-normal  text-sm antialiased'>All with the backing and continuity that Brookfield provides.</div>
       </div>
       <div className='flex justify-center'>
                                   <svg width="7" height="65" viewBox="0 0 7 65" fill="none" xmlns="http://www.w3.org/2000/svg">

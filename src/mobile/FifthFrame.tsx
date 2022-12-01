@@ -23,18 +23,18 @@ function FifthFrame() {
         <div className='tracking-tighter text-2xl  font-semibold font-playfair px-4 '>
           Brookfield Asset Management
         </div>
-        <div className='tracking-tighter font-playfair font-normal  text-sm  px-4 max-w-9777'>
+        <div className='tracking-tighter font-normal  text-sm  px-4 max-w-9777'>
           An asset-lite manager investing third party capital through its private funds
         </div>
          <Waypoint
         onEnter={() => toggle2(false)}
         bottomOffset='40%'
       />
-        <div className='tracking-tighter font-playfair font-normal  text-sm  ml-3 px-5'>
+        <ul className='tracking-tighter font-normal  text-sm  ml-3 px-5 list'>
                   <li >Manages money for Limited Partners</li>
                   <li >Requires little or no [balance sheet] capital</li>
                   <li >Higher dividend payout ratio</li>
-        </div>
+        </ul>
       </div>
       <div className='py-16 px-5'>
 

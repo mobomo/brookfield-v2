@@ -5,7 +5,7 @@ function SecondFrame() {
   return (
     <div className='centerColumn text-white  w-fit  max-w-9777 mb-40 absolute'>
       <div className=' flex flex-col items-center '>
-                <div className=' text-lg w-full text-center p-7 tracking-tighter  max-w-9777'>
+                <div className=' text-2xl w-full text-center p-7 tracking-tighter  max-w-9777 font-playfair'>
                           Our business has greater potential for even more growth with the creation of a new pure-pay alternative asset manager.
                 </div>
                 <div className=''>
@@ -22,7 +22,7 @@ function SecondFrame() {
                       <div className='font-playfair font-mediumplus  text-2xl'>
                         Two entities, distinct offerings
                       </div>
-                      <div className='font-playfair font-normal  text-xs  antialiased tracking-tighter'>
+                      <div className='font-normal  text-sm  antialiased tracking-tighter'>
                         Each with day-to-day operations preserved and the focus of a dedicated management team.
                       </div>
                 </div>
