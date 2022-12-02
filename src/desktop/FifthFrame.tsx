@@ -4,12 +4,13 @@ import React from 'react'
 import {Waypoint} from 'react-waypoint'
 
 const FifthFrame = () => {
-  const [on, toggle] = React.useState(true);
+  const [on1, toggle1] = React.useState(true);
+  const [on2, toggle2] = React.useState(true)
   return (
     <div className={`centerColumn  h-full w-full pb-20 pt-0 gap-0 bg-white`} >
       <Waypoint
-        onEnter={() => toggle(false)}
-        bottomOffset='85%'
+        onEnter={() => toggle1(false)}
+        // bottomOffset='45%'
       />
       <div className='centerRow gap-2 max-w-140 '>
         <div className='text-brandblue flex flex-col items-start gap-5 pr-0 max-w-100 min-w-70 '>
@@ -24,11 +25,15 @@ const FifthFrame = () => {
                 </ul>
         </div>
         <div className=''>
-       {  on? <Animation5  />:<Animation5a  />}
+       {  on1? <Animation5  />:<Animation5a  />}
         </div>
       </div>
+              <Waypoint
+        onEnter={() => toggle2(false)}
+        // bottomOffset='45%'
+      />
       <div className=' -ml-20'>
-   { on? <Animation6 />: <Animation6a />}
+   { on2? <Animation6 />: <Animation6a />}
       </div>
 
     </div>
