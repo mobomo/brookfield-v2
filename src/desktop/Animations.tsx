@@ -105,7 +105,7 @@ export const Animation5 = () => {
     height={500}
     width={500}
   />;
-  </>);
+  </>)
 }
 export const Animation5a = () => {
     const defaultOptions = {
