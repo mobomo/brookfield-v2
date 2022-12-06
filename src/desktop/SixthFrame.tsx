@@ -14,18 +14,15 @@ const SixthFrame = () => {
               <div className='text-center px-2  max-w-97 flex flex-col gap-3'>
                       <div className='heading '>A proven strategy</div>
                       <div className='text-xl leading-8'>
-          Our history of successfully providing public market access to Brookfield's investing expertise
+                        <p className='pb-5'>We have a history of success in providing public market access to our capabilities through our listed affiliates</p>
+                        <p>Another example of giving investors options in how to invest with us…</p>
                       </div>
               </div>
               <div className='centerRow p-10 gap-24 '>
                       <div className=''> <Animation9 /></div>
                       <div className='text-xl flex flex-col items-left gap-10 '>
                             <div className='leading-8'>
-                                Allows investors the flexibility to invest in the businesses or sector they prefer
-                            </div>
-
-                            <div className=''>
-                              All with the backing and continuity that Brookfield provides.
+                              …with all our businesses benefiting from the Brookfield Ecosystem
                             </div>
                       </div>
                 </div>

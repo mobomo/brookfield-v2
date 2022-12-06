@@ -36,16 +36,14 @@ const FirstFrame = () => {
       </div>
       <div  className='text-center px-80 antialiased font-opensans  font-medium  text-lg gap-8 centerContent py-20   '>
 
-                  <div className='-mt-20 w-100 '>
-
-                                      We have delivered superior long-term returns by following a patient, value-oriented
-                              approach to investing, growing the breadth and depth of our portfolio over the years...
-
-                  </div>
-                  <div className=''>
-                                  All the while leveraging our operational expertise to improve outcomes
-                                  for our business, investors and communities
-                  </div>
+        <div className='-mt-20 w-100 '>
+          But first, what will never change: 
+          <ul>
+            <li>Our focus on delivering strong performance across market cycles</li>
+            <li>Our mission to create long-term value in our businesses and communities around the world</li>
+            <li>Bringing our global reach, large-scale capital and operational expertise to bear in everything we do</li>
+          </ul>
+        </div>
       </div>
 
 

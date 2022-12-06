@@ -35,8 +35,8 @@ export const Animation2 = () => {
     height={300}
     width={300}
     
-  />;
-};
+  />
+}
 
 export const Animation2a = () => {
     const defaultOptions = {
@@ -45,7 +45,7 @@ export const Animation2a = () => {
       animationData: animations.anim4 ,
     }
     return  <Lottie options={defaultOptions} />
-};
+}
 
 export const Animation3 = () => {
     const defaultOptions = {
@@ -63,8 +63,8 @@ export const Animation3 = () => {
     height={300}
     width={300}
     
-  />;
-};
+  />
+}
 
 export const Animation4 = () => {
     const defaultOptions = {
@@ -80,8 +80,8 @@ export const Animation4 = () => {
     height={300}
     width={300}
     
-  />;
-};
+  />
+}
 export const Animation5 = () => {
     const defaultOptions = {
       loop: true,
@@ -94,7 +94,7 @@ export const Animation5 = () => {
     height={300}
     width={300}
     
-  />;
+  />
 }
 export const Animation5a = () => {
     const defaultOptions = {
@@ -107,7 +107,7 @@ export const Animation5a = () => {
     height={300}
     width={300}
     
-  />;
+  />
 }
 
 

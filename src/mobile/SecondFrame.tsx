@@ -1,33 +1,33 @@
 import React from 'react'
-import {  Animation3 } from './Animations'
+import {  Animation4 } from './Animations'
 
 function SecondFrame() {
   return (
-    <div className='centerColumn text-white  w-fit  max-w-9777 mb-40 absolute'>
+    <div className='centerColumn text-white  w-fit  max-w-9777 '>
       <div className=' flex flex-col items-center '>
-                <div className=' text-2xl w-full text-center p-7 tracking-tighter  max-w-9777 font-playfair'>
-                          Our business has greater potential for even more growth with the creation of a new pure-pay alternative asset manager.
-                </div>
-                <div className=''>
-                          <svg width="7" height="65" viewBox="0 0 7 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <ellipse cx="3.5" cy="2.70833" rx="3.5" ry="2.70833" fill="#F5F5F5"/>
-                          <line x1="3.5" y1="3.09525" x2="3.5" y2="65" stroke="#F5F5F5"/>
-                          </svg>
+        <div className=' text-2xl w-full text-center p-7 tracking-tighter  max-w-9777 font-playfair'>
+          With the launch of a publicly listed, pure-play alternative asset manager, we are moving into our next phase of growth.
+        </div>
+        <div className=''>
+          <svg width="7" height="65" viewBox="0 0 7 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="3.5" cy="2.70833" rx="3.5" ry="2.70833" fill="#F5F5F5"/>
+          <line x1="3.5" y1="3.09525" x2="3.5" y2="65" stroke="#F5F5F5"/>
+          </svg>
 
 
-                </div>
+        </div>
        </div>
       <div className='centerColumn place-content-between flex-col-reverse '>
                 <div className='flex  flex-col  place-content-between px-8 text-center gap-3'>
                       <div className='font-playfair font-mediumplus  text-2xl'>
-                        Two entities, distinct offerings
+                        Two distinct companies
                       </div>
                       <div className='font-normal  text-sm  antialiased tracking-tighter'>
-                        Each with day-to-day operations preserved and the focus of a dedicated management team.
+                        Each with experienced, dedicated management teams that work together to create value for investors
                       </div>
                 </div>
                 <div className='flex-grow-0  h-fit'>
-                      <Animation3 />
+                      <Animation4 />
                 </div>
       </div>
       <div className='p-5 '>

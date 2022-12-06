@@ -25,7 +25,7 @@ export const Frame00SM = () => {
     <div className='
       flex text-white text-md text-center
       font-mediumplus  flex-wrap antialiased tracking-tighter  px-10 max-w-70'>
-      With a century of experience owning and operating assets, and twenty years offering private investment opportunities to the world’s most sophisticated investors, we are creating a new way for investors to benefit from our expertise
+      We are creating a new way for investors to benefit from our expertise, based on a century of experience owning and operating assets and twenty years offering private investment opportunities to the world’s most sophisticated investors.
     </div>
   )
 };
@@ -34,13 +34,12 @@ export const Frame000 = () => {
   return (
     <div className='flex flex-col text-center justify-center items-center mt-10 '>
       <div className='flex text-white text-sm  w-100 text-center font-semibold mb-5'>
-        We have delivered superior long-term returns by following a patient, value-oriented
-        approach to investing, growing the breadth and depth of our portfolio over the years...
-      </div>
-      <div>
-        <div className='flex text-white text-sm  w-99 text-center font-semibold'>
-          All the while leveraging our operational expertise to improve outcomes
-          for our business, investors and communities</div>
+        But first, what will never change: 
+        <ul>
+          <li>Our focus on delivering strong performance across market cycles</li>
+          <li>Our mission to create long-term value in our businesses and communities around the world</li>
+          <li>Bringing our global reach, large-scale capital and operational expertise to bear in everything we do</li>
+        </ul>
       </div>
     </div>
   )

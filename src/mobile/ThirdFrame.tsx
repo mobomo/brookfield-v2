@@ -1,14 +1,16 @@
-import {  Animation4 } from './Animations'
+// import {  Animation4 } from './Animations'
 
 function ThirdFrame() {
   return (
     <div className='p-6 max-w-9777 mb-40 absolute'>
-      <div> <Animation4 /></div>
+      {/* <div> <Animation4 /></div> */}
       <div className='text-white text-center px-10 gap-3 flex flex-col max-w-9777'>
 
-              <div className='font-playfair font-mediumplus  text-2xl'>Another way to invest with Brookfield</div>
+              <div className='font-playfair font-mediumplus  text-2xl'>
+                A new way to invest: Brookfield Asset Management
+              </div>
               <div className='font-normal  text-sm  antialiased tracking-tighter'>
-                Investors now have the option to invest in a pure-play asset manager backed by a company with large scale capital and a strong track record of delivering returns to shareholders
+                A pure-play asset manager backed by Brookfield Corporation—a company with large-scale capital and a history of generating strong returns for shareholders
               </div>
        </div>
       <div className='flex justify-center p-4'>
