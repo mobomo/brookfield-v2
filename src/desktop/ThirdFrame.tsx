@@ -2,12 +2,44 @@ import React from 'react'
 // import { Animation4 } from '../desktop/Animations';
 import {Waypoint} from 'react-waypoint'
 
+import { useEffect, useRef, useState } from 'react'
+import { useScroll, motion, useTransform } from 'framer-motion'
+
 
 const ThirdFrame = () => {
   const [on, toggle] = React.useState(false)
 
+  const {scrollY} = useScroll()
+  const [scroll, setScroll] = useState(0);
+
+  const ref = useRef(null)
+  const { scrollYProgress } = useScroll({
+  target: ref,
+  offset: ["start end", "end end"]
+  })
+
+  useEffect(() => {
+    return scrollY.onChange((latest) => {
+      setScroll(scrollYProgress.get())
+    })
+  }, [])
+
   return (
-    <div className='centerContent w-fit h-fit max-w-140 pb-14'>
+  <motion.div
+    initial={{
+      opacity: 0.8,
+      // y:'50px',
+    }}
+    style={{
+      opacity: scrollYProgress,
+      translateY:-100*scroll
+    }}
+    ref={ref}
+    exit={{ opacity: 0 }}
+        
+    className='text-white centerColumn  gap-10 z-40 '
+  >
+    <div className='centerContent w-fit h-fit max-w-140'>
                                           <Waypoint
                       onLeave={() => toggle(!on)}
                       bottomOffset='-90%'
@@ -40,6 +72,7 @@ const ThirdFrame = () => {
 </svg>
       </div> */}
     </div>
+    </motion.div>
   )
 }
 

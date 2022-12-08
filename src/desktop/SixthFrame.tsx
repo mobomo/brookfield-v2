@@ -14,8 +14,8 @@ const SixthFrame = () => {
               <div className='text-center px-2  max-w-97 flex flex-col gap-3'>
                       <div className='heading '>A proven strategy</div>
                       <div className='text-xl leading-8'>
-                        <p className='pb-5'>We have a history of success in providing public market access to our capabilities through our listed affiliates</p>
-                        <p>Another example of giving investors options in how to invest with us…</p>
+                        <div className='pb-5'>We have a history of success in providing public market access to our capabilities through our listed affiliates</div>
+                        <div>A diverse set of opportunities to invest with us…</div>
                       </div>
               </div>
               <div className='centerRow p-10 gap-24 '>

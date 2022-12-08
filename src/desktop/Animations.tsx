@@ -5,6 +5,7 @@ import useTimer from '../hooks/getTimeUp';
 import { Waypoint } from 'react-waypoint';
 import React from 'react';
 
+// City Animation
 export const Animation1 = () => {
     const defaultOptions = {
       loop: true,

@@ -38,7 +38,7 @@ const FirstFrame = () => {
 
         <div className='-mt-20 w-100 '>
           But first, what will never change: 
-          <ul>
+          <ul className='text-xl'>
             <li>Our focus on delivering strong performance across market cycles</li>
             <li>Our mission to create long-term value in our businesses and communities around the world</li>
             <li>Bringing our global reach, large-scale capital and operational expertise to bear in everything we do</li>

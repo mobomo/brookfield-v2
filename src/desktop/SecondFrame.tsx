@@ -1,11 +1,48 @@
 import React from 'react'
 import { Animation4 } from '../desktop/Animations'
+import {Waypoint} from 'react-waypoint'
+
+import { useEffect, useRef, useState } from 'react'
+import { useScroll, motion, useTransform } from 'framer-motion'
 
 const SecondFrame = () => {
   const [on, toggle] = React.useState(false)
 
+  const {scrollY} = useScroll()
+  const [scroll, setScroll] = useState(0);
+
+  const ref = useRef(null)
+  const { scrollYProgress } = useScroll({
+  target: ref,
+  offset: ["start end", "end end"]
+  })
+
+  useEffect(() => {
+    return scrollY.onChange((latest) => {
+      setScroll(scrollYProgress.get())
+    })
+  }, [])
+
   return (
+    <motion.div
+      initial={{
+        opacity: 0.8,
+        // y:'15%',
+      }}
+      style={{
+        opacity: scrollYProgress,
+        translateY:-150*scroll
+      }}
+      ref={ref}
+      exit={{ opacity: 0 }}
+          
+      className='text-white centerColumn  gap-10 z-40 '
+    >
     <div className='text-white  centerColumn  text-center w-fit h-fit  gap-10 '>
+    <Waypoint
+      onEnter={() => toggle(false)}
+      bottomOffset='10%'
+    />
       <div className='text-3xl font-semibold font-playfair leading-9 max-w-100'>
         With the launch of a publicly listed, pure-play alternative asset manager, we are moving into our next phase of growth.
       </div>
@@ -17,6 +54,7 @@ const SecondFrame = () => {
                           <line x1="1" y1="83.5" x2="265" y2="83.5" stroke="#F5F5F5"/>
                           </svg>
       </div>
+      
       <div className='flex  w-fit px-40 gap-2  '>
 
               <div className='  flex flex-col items-start pl-20 gap-3  
@@ -44,6 +82,7 @@ const SecondFrame = () => {
                 </svg>
       </div>
     </div>
+    </motion.div>
   )
 }
 

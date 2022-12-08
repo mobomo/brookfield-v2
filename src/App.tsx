@@ -109,8 +109,8 @@ const output2 = [0, 20*scroll*7, 0]
 const translateY = useTransform(y, input2, output2)
 
   return (
-    <div className="h-fit">
-     <div className=" screen  -mb-32"  id='screen1'>
+    <div className="h-fit bg-brandblue">
+     <div className="screen"  id='screen1'>
 
         <div className=' p-10 mb-16 ' id=''> 
           {isMobile ?
@@ -126,21 +126,29 @@ const translateY = useTransform(y, input2, output2)
                        </div>
        </div> 
      
-      <div className="screen h-70 "  id='screen2'>
-  
+      <div className="screen h-fit overflow-visible"  id='screen2'>
+            {/* City Animation + Never Change */}
         {isMobile ? <FirstFrameSM /> :  <FirstFrame />}
  
          
       </div>
-      <div className=" screen h-100 lg:h-100 xl:h-99  z-50 "  id='screen3'>
+      <div className=" screen h-fit z-50 overflow-visible"  id='screen3'>
         
   
-        {isMobile ? <SecondFrameSM /> : <OnScrollAnimation initial={ 0} duration={2}><SecondFrame /></OnScrollAnimation>}
+        {isMobile ? 
+        <SecondFrameSM /> : 
+        // <OnScrollAnimation initial={ 0} duration={2}>
+          <SecondFrame />
+          // </OnScrollAnimation>
+          }
       
       </div>
-      <div className="screen h-977 "   id='screen4'>
-        { isMobile? <ThirdFrameSM  />:<ScreenAnimation2><ThirdFrame  /></ScreenAnimation2>}
-      
+      <div className="screen h-fit overflow-visible"   id='screen4'>
+        { isMobile ? <ThirdFrameSM  /> :
+        // <ScreenAnimation2>
+          <ThirdFrame  />
+        // </ScreenAnimation2>
+        }
       </div>
 
       <div className="screen bg-lightBlue h-fit z-10 relative"  id='screen5'>

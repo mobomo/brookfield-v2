@@ -9,7 +9,7 @@ const FifthFrame = () => {
     <div className={`centerColumn  h-full w-full pt-0 gap-0 bg-white`} >
       <Waypoint
         onEnter={() => toggle(false)}
-        bottomOffset='85%'
+        bottomOffset='20%'
       />
       <div className='centerRow gap-2 max-w-140 '>
         <div className='text-brandblue flex flex-col items-start gap-5 pr-0 max-w-100 min-w-70 '>

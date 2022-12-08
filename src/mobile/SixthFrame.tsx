@@ -14,7 +14,7 @@ function FifthFrame() {
         <div className='font-playfair font-mediumplus  text-2xl'>A proven strategy</div>
         <div className='font-opensans font-normal  text-sm antialiased'>
           <p className='pb-5'>We have a history of success in providing public market access to our capabilities through our listed affiliates</p>
-          <p>Another example of giving investors options in how to invest with us…</p>
+          <p>A diverse set of opportunities to invest with us…</p>
         </div>
       </div>
       <div>

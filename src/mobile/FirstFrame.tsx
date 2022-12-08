@@ -5,9 +5,18 @@ export const FirsthFrame = () => {
   const [on, toggle] = useState(false);
   return (
 
-     <div className='flex flex-col items-center max-w-40 -mt-80 z-50 absolute text-white text-sm'>
+     <div className='flex flex-col items-center max-w-40 z-50 text-white text-sm'>
                   <div className='animate-layerOpacity'>
+                    {/* City Animation */}
                     <Animation1 />
+                    <div className="flex flex-col items-center gap-3 mt-10 uppercase">
+                      <div>Renewable Power & Transition</div>
+                      <div>Infrastructure</div>
+                      <div>Private Equity</div>
+                      <div>Real Estate</div>
+                      <div>Credit</div>
+                      <div>Insurance</div>
+                    </div>
                   </div>
 
                   <div className='mt-5 '>
@@ -18,9 +27,9 @@ export const FirsthFrame = () => {
 
                   </div>
                   {/* <div className='flex flex-col text-center justify-center items-center mt-3 text-white text-sm  font-normal gap-4 antialiased tracking-tighter'> */}
-                  <div className='flex flex-col gap-3 mt-20 max-w-110 min-w-97 '>
+                  <div className='flex flex-col gap-3 mt-20 mb-20 max-w-110'>
                     <div className='heading'>But first, what will never change:</div>
-                    <ul className='list pl-6'>
+                    <ul className='list pl-6 text-sm'>
                       <li>Our focus on delivering strong performance across market cycles</li>
                       <li>Our mission to create long-term value in our businesses and communities around the world</li>
                       <li>Bringing our global reach, large-scale capital and operational expertise to bear in everything we do</li>

@@ -57,7 +57,7 @@ const extendTheme = {
    extend: {
       colors: {
         // "brandblue": "#082c5c",
-        "brandblue": "#002A4E",
+        "brandblue": "#0f3557",
         "lightBlue": "#f2f5f8",
 
       },

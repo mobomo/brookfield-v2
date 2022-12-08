@@ -22,7 +22,16 @@ export const FirsthFrame = () => {
      <Frame00SM />
          </div>
                   <div className='animate-layerOpacity'>
+                    {/* City Animation */}
                     <Animation1 />
+                    <div className="flex flex-col">
+                      <div>Renewable Power & Transition</div>
+                      <div>Infrastructure</div>
+                      <div>Private Equity</div>
+                      <div>Real Estate</div>
+                      <div>Credit</div>
+                      <div>Insurance</div>
+                    </div>
                   </div>
 
                   <div className='mt-5 '>
