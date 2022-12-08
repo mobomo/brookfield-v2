@@ -28,7 +28,7 @@ export const FirsthFrame = () => {
                   </div>
                   {/* <div className='flex flex-col text-center justify-center items-center mt-3 text-white text-sm  font-normal gap-4 antialiased tracking-tighter'> */}
                   <div className='flex flex-col gap-3 mt-20 mb-20 max-w-110'>
-                    <div className='heading'>But first, what will never change:</div>
+                    <div className='text-2xl font-playfair'>But first, what will never change:</div>
                     <ul className='list pl-6 text-sm'>
                       <li>Our focus on delivering strong performance across market cycles</li>
                       <li>Our mission to create long-term value in our businesses and communities around the world</li>

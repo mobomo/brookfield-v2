@@ -44,7 +44,10 @@ export const Animation2a = () => {
       autoplay: true, 
       animationData: animations.anim4 ,
     }
-    return  <Lottie options={defaultOptions} />
+    return  <Lottie options={defaultOptions}
+    height={300}
+    width={300}
+     />
 }
 
 export const Animation3 = () => {
