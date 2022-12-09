@@ -4,7 +4,7 @@ import {Animation9 } from '../desktop/Animations'
 
 const SixthFrame = () => {
   return (
-    <div className='centerColumn w-fit h-fit max-w-120 py-14 text-white gap-0 mt-0'>
+    <div className='centerColumn w-fit h-fit max-w-120 py-24 text-white gap-0 mt-0'>
               <div className=''>
                               <svg width="7" height="84" viewBox="0 0 7 84" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <circle cx="3.5" cy="3.5" r="3.5" fill="#F5F5F5"/>

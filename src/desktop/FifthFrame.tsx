@@ -6,7 +6,7 @@ import {Waypoint} from 'react-waypoint'
 const FifthFrame = () => {
   const [on, toggle] = React.useState(true);
   return (
-    <div className={`centerColumn  h-full w-full pt-0 gap-0 bg-white`} >
+    <div className={`centerColumn  h-full w-full gap-0 bg-white py-24`} >
       <Waypoint
         onEnter={() => toggle(false)}
         bottomOffset='20%'
@@ -21,7 +21,7 @@ const FifthFrame = () => {
                   <li>Provides shareholders with a higher dividend payout ratio</li>
                 </ul>
         </div>
-        <div className=''>
+        <div className='h-64 flex items-center'>
        {  on? <Animation5  />:<Animation5a  />}
         </div>
       </div>

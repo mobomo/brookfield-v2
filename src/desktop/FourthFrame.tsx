@@ -6,13 +6,13 @@ import {Waypoint} from 'react-waypoint';
 const FourthFrame = () => {
   const [on, toggle] = React.useState(true);
   return (
-    <div className='centerRow w-fit h-fit max-w-130 pt-0'>
+    <div className='centerColumn  h-full w-full gap-0 py-24'>
       <Waypoint
         onEnter={() => toggle(false)}
       />
-
-      <div className='text-brandblue flex flex-col max-w-97 min-w-97
-      justify-center text-left gap-3 pb-16 '>
+      <div className='centerRow gap-2 max-w-140 '>
+      <div className='text-brandblue flex flex-col max-w-100 min-w-70
+      justify-center text-left gap-3'>
               <div className=' heading'>Brookfield Corporation</div>
               <ul className='antialiased text-xl pl-6 list flex flex-col gap-2'>
                 <li>Deploys large-scale, perpetual and flexible capital across our operating businesses</li>
@@ -22,8 +22,9 @@ const FourthFrame = () => {
                 <li>Remains conservatively capitalized, with significant liquidity</li>
               </ul>
               </div>
-        <div className='pl-10'>
+        <div className='h-64 flex items-center'>
              {on? <Animation2 />: <Animation2a />}
+        </div>
       </div>
     </div>
   )
