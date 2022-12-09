@@ -10,7 +10,7 @@ const FirstFrame = () => {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
   target: ref,
-  offset: ["start end", "end end"]
+  offset: ["start end", "start center"]
   })
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const FirstFrame = () => {
   return (
     <motion.div
       initial={{
-        opacity: 0.8,
+        // opacity: 0.8,
         // y:'15%',
       }}
       style={{
